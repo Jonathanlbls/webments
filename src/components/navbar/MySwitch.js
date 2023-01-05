@@ -7,8 +7,8 @@ function MySwitch() {
    
       return (
               <div>
-              <Switch  sx={(backgroundColor) => ({ '.mantine-Switch-trackLabel'
-              :{ backgroundColor:isSwitchOn ? 'red' : 'grey' } })}
+              <Switch  color="red" sx={(backgroundColor) => ({ '.mantine-Switch-trackLabel'
+              :{ backgroundColor:isSwitchOn ? 'red' : '' } })}
               onChange={() => setIsSwitchOn(!isSwitchOn)}/>
               </div>
             );
