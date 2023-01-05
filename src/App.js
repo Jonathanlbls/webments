@@ -1,18 +1,14 @@
 import React from 'react';
-import "./anais.css"
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Navigation from './components/Navigation';
+import './components/navbar/Gothique.css';
+import Gothique from './components/navbar/Gothique';
 
 
 function App() {
   return (
     <div className="App">
-      <Navigation></Navigation>
-      <Header></Header>
-      <Footer></Footer>
+      <Gothique></Gothique>
     </div>
-  );
-}
+  )
+  };
 
 export default App;
