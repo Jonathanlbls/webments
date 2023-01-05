@@ -13,7 +13,9 @@ function Gothique() {
           <div className='navbarre'>
 
             <div className='left'>
-            <img src={logogot} />
+            <a href="https://www.example.com">
+            <img src={logogot}/>
+            </a>
             <div class="ligne"></div>
               <a href="https://www.w3schools.com/">Femme</a>
               <div class="ligne"></div>
@@ -24,7 +26,7 @@ function Gothique() {
             </div>
   
             <div className='right'>
-            <MySwitch size="large" className="icon"></MySwitch>
+            <MySwitch className="icon"></MySwitch>
             <a href="/my-page" class="icon">
             <FaUserAlt/>
             </a>
