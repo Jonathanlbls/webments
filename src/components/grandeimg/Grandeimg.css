@@ -1,0 +1,69 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.Bloc3{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+    background-color: black;
+    padding-top: 3%;
+  }
+
+  .text {
+    width: 25%;
+    height: 25%;
+    margin-left: 40px;
+    background-color:#BB0000 ;
+    padding: 40px;
+    transform: translate(124px, 224px);
+    color: white;
+  }
+
+  .text h3 {
+    font-weight: 300;
+    font-size: 36px;
+    margin-bottom: 60px;
+    margin-top: 10px;
+  }
+.text p {
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 60px;
+}
+  .text a {
+    color: white;
+    text-underline-offset: 8px;
+    padding-bottom: 50px;   
+  }
+
+  .text a:hover {
+    color: black;
+  }
+  
+  .photo {
+    margin-left: 40px;
+    margin-right: 40px;
+    color: white;
+  }
+
+  .photo img { 
+    height: 800px;
+  }
+
+  .reduction {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BB0000;
+    padding: 40px;
+    border-radius: 100%;
+    height: 137px;
+    width: 137px;
+    transform: translate(476px, -197px);
+    font-size: 60px;
+    font-weight: 400;
+    font-family: 'Newsreader';
+  }

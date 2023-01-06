@@ -7,10 +7,11 @@ import { FaUserAlt } from "react-icons/fa";
 import { MySwitch } from 'C:/Users/charlotte.sm/Desktop/webments/webments/src/components/navbar/MySwitch';
 
 function Gothique() {
- 
+  const [Theme, setTheme] = React.useState("red");
+
     return (
-      <div className="App">
-          <div className='navbarre'>
+      <div className="App" onClick={()=>setTheme("white")}>
+          <div className={'navbarre '+Theme}>
 
             <div className='left'>
             <a href="https://www.example.com">
