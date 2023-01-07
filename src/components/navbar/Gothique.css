@@ -94,3 +94,7 @@ a:hover{
     font-size: 13px;
     color: white;
   }
+
+  .dessous a:hover{
+    color: black;
+  }

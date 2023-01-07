@@ -30,6 +30,10 @@ html,body{
     font-size: 14px;
 }
 
+.haut a:hover{
+    color: black;
+}
+
 .haut button{
     background-color: white;
     color: black;
@@ -59,6 +63,7 @@ html,body{
     border-top: none;
     border-left: none;
     border-right: none;
+    color: white;
 }
 
 .m {
@@ -73,7 +78,7 @@ html,body{
 }
 
 .bas {
-    border-top: 1px solid white;
+    border-top: 0.5px solid rgb(223, 223, 223);
     margin-bottom: 45px;
     padding-top: 45px;
     display: flex;
@@ -86,4 +91,8 @@ html,body{
     text-decoration: none;
     margin: 5px;
     font-size: 14px;
+}
+
+.bas a:hover{
+color: black;
 }
