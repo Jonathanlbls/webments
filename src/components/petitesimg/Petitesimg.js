@@ -1,6 +1,5 @@
 import React from 'react';
 import { AiFillHeart } from "react-icons/ai";
-import { AiOutlineHeart } from "react-icons/ai";
 import { GoSettings } from "react-icons/go";
 import gotimgf1 from 'C:/Users/anais/Documents/Ynov/Design génératif/webments/src/components/image/gotimgf1.png'
 import gotimgf2 from 'C:/Users/anais/Documents/Ynov/Design génératif/webments/src/components/image/gotimgf2.png'
@@ -14,7 +13,7 @@ function Petitesimg() {
         <div className='titre'>
           <h3>Nouveautés</h3>
           <div>
-            <button  className='paramètres'><GoSettings/></button>
+            <button className='paramètres'><GoSettings/></button>
             </div>
         </div>
 
@@ -22,7 +21,7 @@ function Petitesimg() {
 
           <div className='petitesimg'>  
             <div>
-              <button  className='like'><AiFillHeart/></button>
+              <button className='like'><AiFillHeart/></button>
             </div>
              <img src={gotimgf1}/>
             <div className='nom'>
@@ -46,7 +45,7 @@ function Petitesimg() {
 
           <div className='petitesimg'>
             <div>
-              <button  className='like'><AiFillHeart/></button>
+              <button className='like'><AiFillHeart/></button>
             </div>
              <img src={gotimgf3}/>
             <div className='nom'>
@@ -58,7 +57,7 @@ function Petitesimg() {
 
           <div className='petitesimg'>
             <div>
-              <button  className='like'><AiFillHeart/></button>
+              <button className='like'><AiFillHeart/></button>
             </div>
              <img src={gotimgf4}/>
             <div className='nom'>
