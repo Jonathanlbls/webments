@@ -1,0 +1,98 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.B4{
+    background-color: #BB0000 ;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 45px;
+
+}
+
+.haut{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    margin-bottom: 45px;
+}
+
+.haut H4 {
+    font-size: 20px;
+}
+
+.haut a{
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.haut a:hover{
+    color: black;
+}
+
+.haut button{
+    background-color: white;
+    color: black;
+    border: none;
+    display: block;
+    width: 50%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 1.3rem;
+    transition: ease background-color 250ms;
+    margin-top: 40px;
+    }
+    .haut button:hover {
+        background-color: black;
+        color: #BB0000;
+    }
+
+    .haut button:disabled {
+      cursor: default;
+      opacity: 0.7;
+}
+
+.email{
+    margin-top: 40px;
+    background-color: #BB0000;
+    border-bottom: 2px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+}
+
+.m {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.d {
+    display: flex;
+    flex-direction: column;
+}
+
+.bas {
+    border-top: 0.5px solid rgb(223, 223, 223);
+    margin-bottom: 45px;
+    padding-top: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.bas a{
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.bas a:hover{
+color: black;
+}

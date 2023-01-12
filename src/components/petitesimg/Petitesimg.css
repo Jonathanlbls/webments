@@ -2,12 +2,7 @@ html,body{
     width: 100%;
     height: 100%;
 }
-/* *{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
 
-} */
 .titre {
     display: flex;
     font-weight: 700;
@@ -34,6 +29,7 @@ html,body{
     width: 313px;
     height: 70px;
     margin-bottom: 20px;
+    transform: translate(0, -6%);
     background-color:white ;
     color: black;
     font-family:'Newsreader';
