@@ -21,7 +21,7 @@ html,body{
 }
 
 .red{
-    background-color: #BB0000;
+    background-color: white;
 }
 
 .left{display: flex;
@@ -91,6 +91,6 @@ a:hover{
   .dessous a{
     text-decoration: none;
     font-family: 'Newsreader';
-    font-size: 11px;
+    font-size: 14px;
     color: white;
   }

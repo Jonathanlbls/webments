@@ -1,14 +1,14 @@
 import React from 'react';
-import logogot from 'C:/Users/charlotte.sm/Desktop/webments/webments/src/components/image/logogot.svg';
+import logogot from "C:/Users/anais/Documents/Ynov/Design génératif/webments/src/components/image/logogot.svg";
 import { CgLoupe } from "react-icons/cg";
 import { CgShoppingBag } from "react-icons/cg";
 import { MdFavorite } from "react-icons/md";
 import { FaUserAlt } from "react-icons/fa";
-import { MySwitch } from 'C:/Users/charlotte.sm/Desktop/webments/webments/src/components/navbar/MySwitch';
+import { MySwitch } from "C:/Users/anais/Documents/Ynov/Design génératif/webments/src/components/navbar/MySwitch.js";
 
 function Gothique() {
   const [Theme, setTheme] = React.useState("red");
-
+ 
     return (
       <div className="App" onClick={()=>setTheme("white")}>
           <div className={'navbarre '+Theme}>

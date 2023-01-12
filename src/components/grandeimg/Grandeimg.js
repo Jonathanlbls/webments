@@ -1,5 +1,5 @@
 import React from 'react';
-import gotimg from 'C:/Users/charlotte.sm/Desktop/webments/webments/src/components/image/gotimg.png'
+import gotimg from 'C:/Users/anais/Documents/Ynov/Design génératif/webments/src/components/image/gotimg.png'
 
 function Grandeimg() {
 
