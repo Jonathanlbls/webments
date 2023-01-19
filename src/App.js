@@ -13,6 +13,9 @@ function App() {
   const [Couleur, setCouleur] = React.useState("Universelle");
   const [Typo, setTypo] = React.useState("Universelle");
 
+  const [Image, setImage] = React.useState("Universelle");
+ 
+
   const [Gimg, setGimg] = React.useState("Universelle");
   const [Gimgcouleur, setGimgcouleur] = React.useState("Universelle");
   const [Gimgtypo, setGimgtypo] = React.useState("Universelle");
@@ -23,9 +26,10 @@ function App() {
   return (
     <div className="App">
       <Navbar Logo={Logo} Couleur={Couleur} Typo={Typo}></Navbar>
-      <Petitesimg/>
+      <Petitesimg Image={Image} Couleur={Couleur} Typo={Typo}></Petitesimg>
       <Grandeimg Gimg={Gimg} Gimgcouleur={Gimgcouleur} Gimgtypo={Gimgtypo} ></Grandeimg>
       <Footer Footcouleur={Footcouleur} Foottypo={Foottypo}></Footer>
+    
     </div>
   )
   };

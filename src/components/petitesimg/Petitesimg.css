@@ -3,36 +3,73 @@ html,body{
     height: 100%;
 }
 
-.titre {
+/* -----------------------------Universelle--------------------------------------- */
+
+.fond.Universelle {
+    background-color: white;
+}
+
+.police.Universelle {
+    font-family: 'arial';
+}
+
+.titre.Universelle {
     display: flex;
+    justify-content: space-between;
     font-weight: 700;
     font-size: 20px;
-    margin: 10px 20px 0 50px;
-    color: white;
+    margin: 10px 3.3% 0 3.5%;
+    color: black;
+}
+
+.paramètres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 0 5px black;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.paramètres:hover.Universelle {
+    color: #d9d9d9;
 }
 
 .Bloc1{
     display:flex;
     justify-content: center;
-    /* flex-direction: row; */
-    /* vertical-align: middle; */
-    /* background-color: black; */
 }
   
 .petitesimg {
-    margin: 10px 20px 0 20px;
-    /* height: 300px; */
-    color: white;
+    margin: -10px 1.36% 0 1.36%;
 }
 
-.nom {
+.like {
+    display: flex;
+    transform: translate(850%, 150%);
+    color: white;
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+
+.like:hover.Universelle {
+    color: #d9d9d9;
+}
+
+.nom.Universelle {
     width: 313px;
     height: 70px;
     margin-bottom: 20px;
     transform: translate(0, -6%);
-    background-color:white ;
+    background-color:#d9d9d9 ;
     color: black;
-    font-family:'Newsreader';
 }
 
 .nom h5 {
@@ -40,18 +77,226 @@ html,body{
     font-size: 15px;
     margin-bottom: 0;
     margin-top: 0;
-    padding: 10px 0 0 5px;
+    padding: 10px 0 0 10px;
 }
 
 .nom p {
     display: flex;
     font-size: 13px;
     font-weight: 400;
-    padding-left: 5px;
+    padding-left: 10px;
 }
 
-.texte{
+.texte {
     display: flex;
     justify-content: space-between;
     padding-right: 10px;
+}
+
+/* -----------------------------Typo--------------------------------------- */
+
+.police.Gothique {
+    font-family: 'Newsreader';
+}
+
+.police.Classique {
+    font-family: 'Raleway';
+}
+
+.police.Streetwear {
+    font-family: 'Franklin Gothic Heavy';
+}
+
+/* -----------------------------Couleur--------------------------------------- */
+
+/* ----------------Rouge------------------- */
+
+.fond.Rouge {
+    background-color: black;
+}
+
+.titre.Rouge {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px 3.3% 0 3.5%;
+    color: white;
+}
+
+.paramètres:hover.Rouge {
+    color: #BB0000;
+}
+
+.like:hover.Rouge {
+    color: #BB0000;
+}
+
+.nom.Rouge {
+    width: 313px;
+    height: 70px;
+    margin-bottom: 20px;
+    transform: translate(0, -6%);
+    background-color: #BB0000 ;
+    color: white;
+}
+
+/* ----------------Beige------------------- */
+
+.fond.Beige {
+    background-color: white;
+}
+
+.titre.Beige {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px 3.3% 0 3.5%;
+    color: black;
+}
+
+.paramètres:hover.Beige {
+    color: #F5E9DD;
+}
+
+.like:hover.Beige {
+    color: #F5E9DD;
+}
+
+.nom.Beige {
+    width: 313px;
+    height: 70px;
+    margin-bottom: 20px;
+    transform: translate(0, -6%);
+    background-color: #F5E9DD ;
+    color: black;
+}
+
+/* ----------------Bleu------------------- */
+
+.fond.Bleu {
+    background-color: white;
+}
+
+.titre.Bleu {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px 3.3% 0 3.5%;
+    color: black;
+}
+
+.paramètres:hover.Bleu {
+    color: #193D4B;
+}
+
+.like:hover.Bleu {
+    color: #193D4B;
+}
+
+.nom.Bleu {
+    width: 313px;
+    height: 70px;
+    margin-bottom: 20px;
+    transform: translate(0, -6%);
+    background-color: #193D4B ;
+    color: white;
+}
+
+/* ----------------Vert------------------- */
+
+.fond.Vert {
+    background-color: black;
+}
+
+.titre.Vert {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px 3.3% 0 3.5%;
+    color: white;
+}
+
+.paramètres:hover.Vert {
+    color: #1B4B41;
+}
+
+.like:hover.Vert {
+    color: #1B4B41;
+}
+
+.nom.Vert {
+    width: 313px;
+    height: 70px;
+    margin-bottom: 20px;
+    transform: translate(0, -6%);
+    background-color: #1B4B41 ;
+    color: white;
+}
+
+/* ----------------Ciel------------------- */
+
+.fond.Ciel {
+    background-color: white;
+}
+
+.titre.Ciel {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px 3.3% 0 3.5%;
+    color: black;
+}
+
+.paramètres:hover.Ciel {
+    color: #93B7C2;
+}
+
+.like:hover.Ciel {
+    color: #93B7C2;
+}
+
+.nom.Ciel {
+    width: 313px;
+    height: 70px;
+    margin-bottom: 20px;
+    transform: translate(0, -6%);
+    background-color: #93B7C2 ;
+    color: white;
+}
+
+/* ----------------Rose------------------- */
+
+.fond.Rose {
+    background-color: black;
+}
+
+.titre.Rose {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px 3.3% 0 3.5%;
+    color: white;
+}
+
+.paramètres:hover.Rose {
+    color: #DCC9DF;
+}
+
+.like:hover.Rose {
+    color: #DCC9DF;
+}
+
+.nom.Rose {
+    width: 313px;
+    height: 70px;
+    margin-bottom: 20px;
+    transform: translate(0, -6%);
+    background-color: #DCC9DF ;
+    color: black;
 }
