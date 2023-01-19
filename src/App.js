@@ -10,21 +10,21 @@ import './components/footer/Footer.css'
 
 function App() {
   const [Logo, setLogo] = React.useState("Gothique");
-  const [Couleur, setCouleur] = React.useState("Classique");
+  const [Couleur, setCouleur] = React.useState("Gothique");
   const [Typo, setTypo] = React.useState("Classique");
 
 
   const [Pimg, setPimg] = React.useState("Universelle");
-  const [PimgCouleur, setPimgCouleur] = React.useState("Universelle");
+  const [PimgCouleur, setPimgCouleur] = React.useState("Street");
   const [PimgTypo, setPimgTypo] = React.useState("Universelle");
  
 
   const [Gimg, setGimg] = React.useState("Gothiquef");
-  const [Gimgcouleur, setGimgcouleur] = React.useState("Gothique");
-  const [Gimgtypo, setGimgtypo] = React.useState("Gothique");
+  const [Gimgcouleur, setGimgcouleur] = React.useState("Universelle");
+  const [Gimgtypo, setGimgtypo] = React.useState("Universelle");
 
   const [Footcouleur, setFootcouleur] = React.useState("Gothique");
-  const [Foottypo, setFootypo] = React.useState("Gothique");
+  const [Foottypo, setFootypo] = React.useState("Universelle");
 
   return (
     <div className="App">

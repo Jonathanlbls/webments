@@ -14,6 +14,7 @@ html,body{
     margin-left: 40px;
     margin-right: 40px;
     padding: 45px;
+    line-height: 1.5em
 }
 
 .haut{
@@ -85,10 +86,12 @@ html,body{
 
 
   /*Gothique*/
+.Fond.Gothique{
+    background-color: black ;
+}
 
 .Typo.Gothique{
     font-family: 'Newsreader','Times New Roman', Times, serif;
-    background-color: black ;
   }
 
 .B4.Gothique{

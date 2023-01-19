@@ -67,10 +67,9 @@ html,body{
 
   /*Universelle*/
 
-  .App.Universelle {
-    background-color: white;
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
 
+  .navbar.Universelle {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
   }
 
   .left.Universelle a{
@@ -116,6 +115,9 @@ html,body{
 
   .App.Gothique { 
     background-color: black;
+  }
+
+  .navbar.Gothique {
     font-family: 'Newsreader','Times New Roman', Times, serif;
   }
 
@@ -164,7 +166,8 @@ html,body{
 
   /*Street*/
 
-  .App.Street { 
+
+  .navbar.Street {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
