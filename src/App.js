@@ -9,19 +9,19 @@ import './components/petitesimg/Petitesimg.css'
 import './components/footer/Footer.css'
 
 function App() {
-  const [Logo, setLogo] = React.useState("Universelle");
-  const [Couleur, setCouleur] = React.useState("Universelle");
-  const [Typo, setTypo] = React.useState("Universelle");
+  const [Logo, setLogo] = React.useState("Gothique");
+  const [Couleur, setCouleur] = React.useState("Gothique");
+  const [Typo, setTypo] = React.useState("Gothique");
 
   const [Image, setImage] = React.useState("Universelle");
  
 
-  const [Gimg, setGimg] = React.useState("Universelle");
-  const [Gimgcouleur, setGimgcouleur] = React.useState("Universelle");
-  const [Gimgtypo, setGimgtypo] = React.useState("Universelle");
+  const [Gimg, setGimg] = React.useState("Gothiquef");
+  const [Gimgcouleur, setGimgcouleur] = React.useState("Gothique");
+  const [Gimgtypo, setGimgtypo] = React.useState("Gothique");
 
-  const [Footcouleur, setFootcouleur] = React.useState("Universelle");
-  const [Foottypo, setFootypo] = React.useState("Universelle");
+  const [Footcouleur, setFootcouleur] = React.useState("Gothique");
+  const [Foottypo, setFootypo] = React.useState("Gothique");
 
   return (
     <div className="App">

@@ -3,6 +3,33 @@ html,body{
     height: 100%;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Général*/
+
+.fond{
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.Bloc1{
+    display:flex;
+    justify-content: center;
+}
+
+.titre {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 3%;
+}
+
+
 /* -----------------------------Universelle--------------------------------------- */
 
 .fond.Universelle {
@@ -14,11 +41,6 @@ html,body{
 }
 
 .titre.Universelle {
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 20px;
-    margin: 10px 3.3% 0 3.5%;
     color: black;
 }
 
@@ -41,11 +63,7 @@ html,body{
     color: #d9d9d9;
 }
 
-.Bloc1{
-    display:flex;
-    justify-content: center;
-}
-  
+
 .petitesimg {
     margin: -10px 1.36% 0 1.36%;
 }
@@ -103,7 +121,7 @@ html,body{
     font-family: 'Raleway';
 }
 
-.police.Streetwear {
+.police.Street {
     font-family: 'Franklin Gothic Heavy';
 }
 
@@ -111,11 +129,11 @@ html,body{
 
 /* ----------------Rouge------------------- */
 
-.fond.Rouge {
+.fond.Gothique {
     background-color: black;
 }
 
-.titre.Rouge {
+.titre.Gothique {
     display: flex;
     justify-content: space-between;
     font-weight: 700;
@@ -124,15 +142,15 @@ html,body{
     color: white;
 }
 
-.paramètres:hover.Rouge {
+.paramètres:hover.Gothique {
     color: #BB0000;
 }
 
-.like:hover.Rouge {
+.like:hover.Gothique {
     color: #BB0000;
 }
 
-.nom.Rouge {
+.nom.Gothique {
     width: 313px;
     height: 70px;
     margin-bottom: 20px;
@@ -143,11 +161,11 @@ html,body{
 
 /* ----------------Beige------------------- */
 
-.fond.Beige {
+.fond.Classique {
     background-color: white;
 }
 
-.titre.Beige {
+.titre.Classique {
     display: flex;
     justify-content: space-between;
     font-weight: 700;
@@ -156,15 +174,15 @@ html,body{
     color: black;
 }
 
-.paramètres:hover.Beige {
+.paramètres:hover.Classique {
     color: #F5E9DD;
 }
 
-.like:hover.Beige {
+.like:hover.Classique {
     color: #F5E9DD;
 }
 
-.nom.Beige {
+.nom.Classique {
     width: 313px;
     height: 70px;
     margin-bottom: 20px;
@@ -175,11 +193,11 @@ html,body{
 
 /* ----------------Bleu------------------- */
 
-.fond.Bleu {
+.fond.Street {
     background-color: white;
 }
 
-.titre.Bleu {
+.titre.Street {
     display: flex;
     justify-content: space-between;
     font-weight: 700;
@@ -188,15 +206,15 @@ html,body{
     color: black;
 }
 
-.paramètres:hover.Bleu {
+.paramètres:hover.Street {
     color: #193D4B;
 }
 
-.like:hover.Bleu {
+.like:hover.Street {
     color: #193D4B;
 }
 
-.nom.Bleu {
+.nom.Street {
     width: 313px;
     height: 70px;
     margin-bottom: 20px;
