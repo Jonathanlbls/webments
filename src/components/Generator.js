@@ -10,7 +10,7 @@ import '../components/footer/Footer.css';
 
 function Generator() {
   const [Logo, setLogo] = React.useState("Street");
-  const [Couleur, setCouleur] = React.useState("Street");
+  const [Couleur, setCouleur] = React.useState("Ciel");
   const [Typo, setTypo] = React.useState("Street");
 
 
