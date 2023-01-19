@@ -34,7 +34,7 @@ function App() {
       <Footer Footcouleur={Footcouleur} Foottypo={Foottypo}></Footer>
     
     </div>
-  )
-  };
+  );
+}
 
 export default App;
