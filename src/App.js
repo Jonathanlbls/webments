@@ -6,7 +6,7 @@ function App() {
     <div className="App">
 <Generator></Generator>
     </div>
-  )
-  };
+  );
+}
 
 export default App;
