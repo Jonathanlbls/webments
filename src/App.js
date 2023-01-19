@@ -14,12 +14,12 @@ function App() {
   const [Typo, setTypo] = React.useState("Street");
 
 
-  const [Pimg, setPimg] = React.useState("Universelle");
+  const [Pimg, setPimg] = React.useState("Street neutre");
   const [PimgCouleur, setPimgCouleur] = React.useState("Street");
   const [PimgTypo, setPimgTypo] = React.useState("Street");
  
 
-  const [Gimg, setGimg] = React.useState("Streetn");
+  const [Gimg, setGimg] = React.useState("Street neutre");
   const [Gimgcouleur, setGimgcouleur] = React.useState("Street");
   const [Gimgtypo, setGimgtypo] = React.useState("Street");
 

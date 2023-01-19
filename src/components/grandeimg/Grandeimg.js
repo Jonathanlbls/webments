@@ -32,19 +32,19 @@ function Grandeimg({Gimg, Gimgcouleur, Gimgtypo}) {
           {Gimg === "Universelle" && <img src={Uniimg}/>}
 
           {/* Gothique */}
-          {Gimg === "Gothiquef" && <img src={gotimgf}/>}
-          {Gimg === "Gothiquem" && <img src={gotimgm}/>}
-          {Gimg === "Gothiquen" && <img src={gotimgn}/>}
+          {Gimg === "Gothique femme" && <img src={gotimgf}/>}
+          {Gimg === "Gothique homme" && <img src={gotimgm}/>}
+          {Gimg === "Gothique neutre" && <img src={gotimgn}/>}
 
           {/* Classique */}
-          {Gimg === "Classiquef" && <img src={classimgf}/>}
-          {Gimg === "Classiquem" && <img src={classimgm}/>}
-          {Gimg === "Classiquen" && <img src={classimgn}/>}
+          {Gimg === "Classique femme" && <img src={classimgf}/>}
+          {Gimg === "Classique homme" && <img src={classimgm}/>}
+          {Gimg === "Classique neutre" && <img src={classimgn}/>}
 
           {/* Street */}
-          {Gimg === "Streetm" && <img src={streetimgm}/>}
-          {Gimg === "Streetf" && <img src={streetimgf}/>}
-          {Gimg === "Streetn" && <img src={streetimgn}/>}
+          {Gimg === "Street homme" && <img src={streetimgm}/>}
+          {Gimg === "Street femme" && <img src={streetimgf}/>}
+          {Gimg === "Street neutre" && <img src={streetimgn}/>}
           
           <p className={'reduction '+Gimgcouleur}>50%</p>
           </div>
