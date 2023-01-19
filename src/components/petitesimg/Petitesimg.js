@@ -1,8 +1,8 @@
 import React from 'react';
-import gotimgf1 from 'C:/Users/anais/Documents/Ynov/Design génératif/webments/src/components/image/gotimgf1.png'
-import gotimgf2 from 'C:/Users/anais/Documents/Ynov/Design génératif/webments/src/components/image/gotimgf2.png'
-import gotimgf3 from 'C:/Users/anais/Documents/Ynov/Design génératif/webments/src/components/image/gotimgf3.png'
-import gotimgf4 from 'C:/Users/anais/Documents/Ynov/Design génératif/webments/src/components/image/gotimgf4.png'
+import gotimgf1 from 'C:/Users/charlotte.sm/Desktop/webments/webments/src/components/image/gotimgf1.png'
+import gotimgf2 from 'C:/Users/charlotte.sm/Desktop/webments/webments/src/components/image/gotimgf2.png'
+import gotimgf3 from 'C:/Users/charlotte.sm/Desktop/webments/webments/src/components/image/gotimgf3.png'
+import gotimgf4 from 'C:/Users/charlotte.sm/Desktop/webments/webments/src/components/image/gotimgf4.png'
 
 function Petitesimg() {
 

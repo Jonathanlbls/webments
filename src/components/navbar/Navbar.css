@@ -1,0 +1,256 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Général*/
+
+.App{
+    display:flex;
+    flex-direction: column;
+  }
+
+  .navbar{
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+.dessus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 1%;
+}
+
+.left{display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom:1%;
+    width: 30%;
+  }
+    
+
+.left img{
+  margin-bottom: -26%; 
+}
+
+.right{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+}
+
+.ligne {
+    border-left: 2px solid black;
+    height: 40px;
+    margin-top: 1%;
+  }
+
+
+  .dessous{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding-left: 2%;
+    padding-right: 2%;
+
+  }
+
+
+  /*Universelle*/
+
+  .App.Universelle {
+    background-color: white;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+
+  }
+
+  .left.Universelle a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+
+  .icon.Universelle {
+    color: black;
+    font-size: 120%;
+  } 
+
+
+  .icon.Universelle :hover{
+    color: grey;
+  }
+  
+
+  .dessous.Universelle a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-evenly;
+    font-size: 85%;
+    color: black;
+  }
+
+  .dessous.Universelle a:hover{
+    color: grey;
+  }
+
+  .dessous.Universelle {
+    background-color: #D9D9D9;
+    color: black;
+  }
+
+
+
+
+
+/*Gothique*/
+
+  .App.Gothique { 
+    background-color: black;
+    font-family: 'Newsreader','Times New Roman', Times, serif;
+  }
+
+  .dessus.Gothique{
+    background-color: white;
+}
+
+.left.Gothique a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.icon.Gothique {
+  color: black;
+  font-size: 120%;
+} 
+
+.icon.Gothique :hover{
+  color: #BB0000;
+}
+
+.icon.Gothique {
+  color: black;
+  font-size: 120%;
+} 
+
+ .dessous.Gothique a{
+    text-decoration: none;
+    font-size: 85%;
+    color: white;
+  }
+
+  .dessous.Gothique a:hover{
+    color: black;
+  }
+
+  .dessous.Gothique {
+    background-color: #BB0000;
+  }
+
+
+
+
+
+
+  /*Street*/
+
+  .App.Street { 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+
+.left.Street a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.left.Street a:hover{
+  color: rgb(144, 182, 205);
+}
+
+.icon.Street {
+  color: black;
+  font-size: 120%;
+} 
+
+.icon.Street :hover{
+  color: rgb(144, 182, 205);
+}
+
+.icon.Street {
+  color: black;
+  font-size: 120%;
+} 
+
+ .dessous.Street a{
+    text-decoration: none;
+    font-size: 85%;
+    color: white;
+  }
+
+  .dessous.Street a:hover{
+    color: rgb(144, 182, 205);
+  }
+
+  .dessous.Street {
+    background-color: #193D4B
+  }
+
+
+
+
+    /*Classique*/
+
+    .App.Classique { 
+      font-family: Playfair Display, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+  
+  
+  .left.Classique a{
+      color: black;
+      text-decoration: none;
+      font-weight: 500;
+  }
+  
+  .left.Classique a:hover{
+    color: #7B4747;
+  }
+  
+  .icon.Classique {
+    color: black;
+    font-size: 120%;
+  } 
+  
+  .icon.Classique :hover{
+    color: #7B4747;
+  }
+  
+  .icon.Classique {
+    color: black;
+    font-size: 120%;
+  } 
+  
+   .dessous.Classique a{
+      text-decoration: none;
+      font-size: 85%;
+      color: black
+    }
+  
+    .dessous.Classique a:hover{
+      color: #7B4747;
+    }
+  
+    .dessous.Classique {
+      background-color: #F5E9DD
+    }
