@@ -9,10 +9,13 @@ import 'C:/Users/anais/Documents/Ynov/Design génératif/webments/src/components
 import 'C:/Users/anais/Documents/Ynov/Design génératif/webments/src/components/footer/Footer.css'
 
 function App() {
+  const [Image, setImage] = React.useState("Universelle");
+  const [Couleur, setCouleur] = React.useState("Rose");
+  const [Typo, setTypo] = React.useState("Universelle");
   return (
     <div className="App">
       <Gothique></Gothique>
-      <Petitesimg></Petitesimg>
+      <Petitesimg Image={Image} Couleur={Couleur} Typo={Typo}></Petitesimg>
       <Grandeimg></Grandeimg>
       <Footer></Footer>
     </div>
