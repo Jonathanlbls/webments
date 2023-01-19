@@ -1,0 +1,373 @@
+
+/* #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  } */
+
+body,html{
+    width: 100vw;
+    height: 100vh;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg,#b8c6db 0%, #f5f7F7 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.quizz-container{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 400px;
+    height: 409px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px #CECECE;
+}
+
+
+/* .quizz-header{ 
+    padding : 3rem;
+  
+ }  */
+
+h2{
+    padding: 1 rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    text-align: center ;
+    /* margin-top:50px; */
+    /* padding-bottom: 46px; */
+     padding: 39px; 
+    
+}
+
+.ul2{
+    list-style-type: none;
+    padding: 0;
+    text-align: center ;
+    margin-top:10px; 
+    /* padding-bottom: 46px; */
+     /* padding: 39px;  */
+    
+}
+
+ul li{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    text-align: center;
+    padding:10px;
+    margin-top: 20px;
+}
+
+
+ul li label{
+    cursor: pointer;
+    
+}
+
+button{
+    background-color: #083B32;
+    color: #fff;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 1.3rem;
+    margin-top: -2px;
+}
+
+.btn2{
+    background-color: #083B32;
+    color: #fff;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 1.3rem;
+    margin-top: -2px;
+}
+
+button:hover{
+    background-color:#306754;
+}
+
+.answergenre{
+    opacity: 100%;
+    width: 30px;
+    height: 30px;
+   
+}
+
+.homme{
+    font-size: 30px;
+    
+}
+
+.femme{
+    font-size: 30px;
+    
+}
+
+.neutre{
+    font-size: 30px;
+    
+}
+
+.circleHomme{
+    background-color: grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    
+}
+.circle svg{
+    pointer-events: none;
+}
+
+.quizz-relatif{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+.quizz-ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.answergenre.homme:hover ~ .circle {
+    background-color: #93B7C2;
+    transition: 0.7s;
+}
+.answergenre.homme:checked ~ .circle {
+    background-color: #93B7C2;
+    transition: 0.7s;
+}
+
+.answergenre.femme:hover ~ .circle {
+    background-color: #FBAA99;
+    transition: 0.7s;
+}
+.answergenre.femme:checked ~ .circle {
+    background-color: #FBAA99;
+    transition: 0.7s;
+}
+
+.answergenre.neutre:hover ~ .circle {
+    background-color: #F9EAC3;
+    transition: 0.7s;
+}
+.answergenre.neutre:checked ~ .circle {
+    background-color: #F9EAC3;
+    transition: 0.7s;
+}
+
+.circleFemme{
+    background-color: grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    
+}
+
+.circleFemme:hover{
+    background-color: #FBAA99;
+    transition: 0.7s;
+}
+
+.circleNeutre{
+    background-color: grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    
+}
+
+.circleNeutre:hover{
+    background-color: #F9EAC3;
+    transition: 0.7s;
+}
+
+
+.palette1{
+    
+    width: 267px;
+    height: 67px;
+    margin-top: -44px;
+  
+}
+
+
+.palette2{
+    
+    margin-top: -18px;
+    width: 267px;
+    height: 67px;
+}
+
+.palette3{
+    margin-top: -18px;
+    width: 267px;
+    height: 67px;
+}
+
+.answergothique{
+    margin-right: 150px;
+}
+
+.answerclassique{
+    margin-left: 175px;
+    margin-top: -188px;
+}
+
+.hommeclassique {
+    margin-left: -230px;
+    margin-bottom: -165px;
+    margin-top: -250px;
+    width: 60%;
+}
+
+.hommestreetwear {
+    margin-left: -10px;
+    margin-bottom: -119px;
+    margin-top: -274px;
+    width: 65%;
+}
+
+.hommegothique {
+    margin-right: -194px;
+    margin-bottom: -55px;
+    margin-top: -274px;
+    width: 65%;
+}
+    
+.hommeclassique{
+    
+    filter: grayscale(1);
+    
+}
+
+.hommestreetwear{
+    
+     filter: grayscale(1);
+        
+}
+
+.hommegothique{
+    
+    filter: grayscale(1);
+    
+}
+
+.hommeclassique:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+
+}
+
+
+.hommegothique:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+
+}
+
+.hommestreetwear:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+  
+}
+
+/* .checkbox-wrapper {
+    position: absolute;
+   
+
+}
+
+.checkmark {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-color: #ddd;
+    border-radius: 10px;
+    position: relative;
+    transition: background-color 0.4s;
+    margin-top: 28px;
+    margin-left: 14px;
+;
+}
+
+
+#check:checked ~ .checkmark {
+    background-color: #08bb68;
+}
+
+.checkmark::after{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 12px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateZ(40deg) scale(10);
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+#check:checked ~ .checkmark::after{
+    opacity: 1;
+    transform: translate(-50%, -50%) rotateZ(40deg) scale(1);
+} */
+
+.palettegothique{
+    margin-left: -340px;
+    
+}
+
+.canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
