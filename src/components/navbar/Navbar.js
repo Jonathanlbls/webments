@@ -12,8 +12,8 @@ import { MySwitch } from "./MySwitch";
 function Navbar({Logo, Couleur, Typo}) {
   
     return (
-      <div className={"App "+Typo}>
-      <div className='navbar'>
+      <div className={"App "+Couleur}>
+      <div className={'navbar '+Typo}>
           <div className= {"dessus "+Couleur}>
 
             <div className= {"left "+Couleur}>

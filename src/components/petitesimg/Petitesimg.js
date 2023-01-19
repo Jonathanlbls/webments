@@ -68,9 +68,9 @@ function Petitesimg({Pimg, PimgCouleur, PimgTypo}) {
               {Pimg === "Classique femme" && <img src={classimgf1}/>}
               {Pimg === "Classique homme" && <img src={classimgh1}/>}
               {Pimg === "Classique neutre" && <img src={classimgn1}/>}
-              {Pimg === "Streetwear femme" && <img src={streetimgf1}/>}
-              {Pimg === "Streetwear homme" && <img src={streetimgh1}/>}
-              {Pimg === "Streetwear neutre" && <img src={streetimgn1}/>}
+              {Pimg === "Street femme" && <img src={streetimgf1}/>}
+              {Pimg === "Street homme" && <img src={streetimgh1}/>}
+              {Pimg === "Street neutre" && <img src={streetimgn1}/>}
             <div className={'nom '+PimgCouleur}>
               <h5>Nom du vêtement</h5>
               <div className='texte'><p>Modèle du vêtement</p>
@@ -89,9 +89,9 @@ function Petitesimg({Pimg, PimgCouleur, PimgTypo}) {
               {Pimg === "Classique femme" && <img src={classimgf2}/>}
               {Pimg === "Classique homme" && <img src={classimgh2}/>}
               {Pimg === "Classique neutre" && <img src={classimgn2}/>}
-              {Pimg === "Streetwear femme" && <img src={streetimgf2}/>}
-              {Pimg === "Streetwear homme" && <img src={streetimgh2}/>}
-              {Pimg === "Streetwear neutre" && <img src={streetimgn2}/>}
+              {Pimg === "Street femme" && <img src={streetimgf2}/>}
+              {Pimg === "Street homme" && <img src={streetimgh2}/>}
+              {Pimg === "Street neutre" && <img src={streetimgn2}/>}
             <div className={'nom '+PimgCouleur}>
               <h5>Nom du vêtement</h5>
               <div className='texte'><p>Modèle du vêtement</p>
@@ -110,9 +110,9 @@ function Petitesimg({Pimg, PimgCouleur, PimgTypo}) {
               {Pimg === "Classique femme" && <img src={classimgf3}/>}
               {Pimg === "Classique homme" && <img src={classimgh3}/>}
               {Pimg === "Classique neutre" && <img src={classimgn3}/>}
-              {Pimg === "Streetwear femme" && <img src={streetimgf3}/>}
-              {Pimg === "Streetwear homme" && <img src={streetimgh3}/>}
-              {Pimg === "Streetwear neutre" && <img src={streetimgn3}/>}
+              {Pimg === "Street femme" && <img src={streetimgf3}/>}
+              {Pimg === "Street homme" && <img src={streetimgh3}/>}
+              {Pimg === "Street neutre" && <img src={streetimgn3}/>}
             <div className={'nom '+PimgCouleur}>
               <h5>Nom du vêtement</h5>
               <div className='texte'><p>Modèle du vêtement</p>
@@ -131,9 +131,9 @@ function Petitesimg({Pimg, PimgCouleur, PimgTypo}) {
               {Pimg === "Classique femme" && <img src={classimgf4}/>}
               {Pimg === "Classique homme" && <img src={classimgh4}/>}
               {Pimg === "Classique neutre" && <img src={classimgn4}/>}
-              {Pimg === "Streetwear femme" && <img src={streetimgf4}/>}
-              {Pimg === "Streetwear homme" && <img src={streetimgh4}/>}
-              {Pimg === "Streetwear neutre" && <img src={streetimgn4}/>}
+              {Pimg === "Street femme" && <img src={streetimgf4}/>}
+              {Pimg === "Street homme" && <img src={streetimgh4}/>}
+              {Pimg === "Street neutre" && <img src={streetimgn4}/>}
             <div className={'nom '+PimgCouleur}>
               <h5>Nom du vêtement</h5>
               <div className='texte'><p>Modèle du vêtement</p>

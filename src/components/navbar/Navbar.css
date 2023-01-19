@@ -67,10 +67,9 @@ html,body{
 
   /*Universelle*/
 
-  .App.Universelle {
-    background-color: white;
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
 
+  .navbar.Universelle {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
   }
 
   .left.Universelle a{
@@ -116,6 +115,9 @@ html,body{
 
   .App.Gothique { 
     background-color: black;
+  }
+
+  .navbar.Gothique {
     font-family: 'Newsreader','Times New Roman', Times, serif;
   }
 
@@ -127,6 +129,10 @@ html,body{
     color: black;
     text-decoration: none;
     font-weight: bold;
+}
+
+.left.Gothique a:hover{
+  color: #BB0000;
 }
 
 .icon.Gothique {
@@ -164,7 +170,7 @@ html,body{
 
   /*Street*/
 
-  .App.Street { 
+  .navbar.Street {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
@@ -254,3 +260,156 @@ html,body{
     .dessous.Classique {
       background-color: #F5E9DD
     }
+
+
+    /*Vert*/
+
+  .App.Vert { 
+    background-color: black;
+  }
+
+  .navbar.Vert {
+    font-family: 'Newsreader','Times New Roman', Times, serif;
+  }
+
+  .dessus.Vert{
+    background-color: white;
+}
+
+.left.Vert a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.left.Vert a:hover{
+  color: #1B4B41;
+}
+
+.icon.Vert {
+  color: black;
+  font-size: 120%;
+} 
+
+.icon.Vert :hover{
+  color: #1B4B41;
+}
+
+.icon.Vert {
+  color: black;
+  font-size: 120%;
+} 
+
+ .dessous.Vert a{
+    text-decoration: none;
+    font-size: 85%;
+    color: white;
+  }
+
+  .dessous.Vert a:hover{
+    color: black;
+  }
+
+  .dessous.Vert {
+    background-color: #1B4B41;
+  }
+
+
+
+    /*Ciel*/
+
+    .navbar.Ciel {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+  
+  
+  .left.Ciel a{
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+  }
+  
+  .left.Ciel a:hover{
+    color: #93B7C2;
+  }
+  
+  .icon.Ciel {
+    color: black;
+    font-size: 120%;
+  } 
+  
+  .icon.Ciel :hover{
+    color: #93B7C2;
+  }
+  
+  .icon.Ciel {
+    color: black;
+    font-size: 120%;
+  } 
+  
+   .dessous.Ciel a{
+      text-decoration: none;
+      font-size: 85%;
+      color: white;
+    }
+  
+    .dessous.Ciel a:hover{
+      color: black;
+    }
+  
+    .dessous.Ciel {
+      background-color: #93B7C2
+    }
+  
+
+        /*Rose*/
+
+  .App.Rose { 
+    background-color: black;
+  }
+
+  .navbar.Rose {
+    font-family: 'Newsreader','Times New Roman', Times, serif;
+  }
+
+  .dessus.Rose{
+    background-color: white;
+}
+
+.left.Rose a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.left.Rose a:hover{
+  color: #DCC9DF;
+}
+
+.icon.Rose {
+  color: black;
+  font-size: 120%;
+} 
+
+.icon.Rose :hover{
+  color: #DCC9DF;
+}
+
+.icon.Rose {
+  color: black;
+  font-size: 120%;
+} 
+
+ .dessous.Rose a{
+    text-decoration: none;
+    font-size: 85%;
+    color: black;
+  }
+
+  .dessous.Rose a:hover{
+    color: grey;
+  }
+
+  .dessous.Rose {
+    background-color: #DCC9DF;
+  }
