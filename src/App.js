@@ -10,8 +10,8 @@ import './components/footer/Footer.css'
 
 function App() {
   const [Logo, setLogo] = React.useState("Gothique");
-  const [Couleur, setCouleur] = React.useState("Gothique");
-  const [Typo, setTypo] = React.useState("Gothique");
+  const [Couleur, setCouleur] = React.useState("Classique");
+  const [Typo, setTypo] = React.useState("Classique");
 
 
   const [Pimg, setPimg] = React.useState("Universelle");
