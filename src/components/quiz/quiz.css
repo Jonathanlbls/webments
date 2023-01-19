@@ -315,6 +315,18 @@ button:hover{
   
 }
 
+.hommeclassique:active {
+    filter: grayscale(0)
+    ;}
+
+.hommestreetwear:active {
+        filter: grayscale(0)
+        ;}
+
+.hommegothique:active {
+            filter: grayscale(0)
+            ;}
+
 /* .checkbox-wrapper {
     position: absolute;
    

@@ -1,20 +1,20 @@
 import React from "react";
-import gothique from "/Users/jonathan/Desktop/code/webments/src/components/image/gothique.png";
-import classique from "/Users/jonathan/Desktop/code/webments/src/components/image/classique.png";
-import streetwear from "/Users/jonathan/Desktop/code/webments/src/components/image/streetwear.png";
+import gothique from "../image/gothique.png";
+import classique from "../image/classique.png";
+import streetwear from "../image/streetwear.png";
 import useForm from "./useform";
 
 
 
-function Fonctionquiz3({setQuiz, setGenre, test}) {
+function Fonctionquiz3({setQuiz, setPalette, test}) {
     const [FormRef,handleSubmit,resetForm] = useForm((data)=>{
         console.log(data.answer,test) // Write your submit function here
-        setGenre(data.answer)
-        setQuiz("question2")
+        setPalette(data.answer)
+        setQuiz("Generator")
       })
 
     return (
-        <div className="quizz-container" id="quizz">
+<form ref={FormRef} onSubmit={handleSubmit} className="quizz-container" id="quizz">
         <div className="quizz-header">
             <h2 id="question">Quel est ta palette préférée ? </h2>
         
@@ -37,11 +37,10 @@ function Fonctionquiz3({setQuiz, setGenre, test}) {
                 </li>
 
             </ul>
-        </div>
-
-        <button id="submit">Soumettre</button>
-
+    
     </div>
+            <button id="submit">Soumettre</button>
+            </form>
             )
 }
 
