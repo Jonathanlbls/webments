@@ -52,7 +52,7 @@ html,body{
 
 .like {
     display: flex;
-    transform: translate(850%, 150%);
+    transform: translate(1400%, 150%);
     color: white;
     background: none;
     border: none;
