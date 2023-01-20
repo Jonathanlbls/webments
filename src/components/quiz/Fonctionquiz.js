@@ -22,7 +22,9 @@ function Fonctionquiz({setQuiz, setGenre, test}) {
                 <li>
                     <div className="quizz-relatif">
                         <input type="radio" name="answer" id="a" value="homme" className="answergenre homme"></input> 
-                        <div className="circleHomme circle"><BsGenderMale className="homme"></BsGenderMale></div>
+                            <div className="circleHomme circle">
+                            <BsGenderMale className="ic"></BsGenderMale>
+                            </div>
                     </div>
                     <label htmlFor="a" id="a_text">Homme</label>
                 </li>
@@ -30,7 +32,9 @@ function Fonctionquiz({setQuiz, setGenre, test}) {
                 <li>
                     <div className="quizz-relatif">
                          <input type="radio" name="answer" id="b" value="femme" className="answergenre femme"/> 
-                         <div className="circleFemme circle"><BsGenderFemale className="femme"></BsGenderFemale></div>
+                            <div className="circleFemme circle">
+                                <BsGenderFemale className="ic"></BsGenderFemale>
+                            </div>
                     </div>
                     <label htmlFor="b" id="b_text">Femme</label>
                 </li>
@@ -38,7 +42,7 @@ function Fonctionquiz({setQuiz, setGenre, test}) {
                 <li>
                      <div className="quizz-relatif">
                           <input type="radio" name="answer" id="c" value="neutre" className="answergenre neutre"/> 
-                          <div className="circleNeutre circle"><IoMaleFemaleOutline className="neutre"></IoMaleFemaleOutline></div>
+                          <div className="circleNeutre circle"><IoMaleFemaleOutline className="ic"></IoMaleFemaleOutline></div>
                     </div>
                     <label htmlFor="c" id="c_text">Neutre</label>
                 </li>

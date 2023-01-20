@@ -141,33 +141,31 @@
 }
 
 .answergenre{
-    opacity: 100%;
+    opacity: 0%;
     width: 30px;
     height: 30px;
    
 }
 
-.homme{
-    font-size: 30px;  
+.ic{
+    color: black;
+    font-size: 30px;
+    
 }
 
-.homme:hover{
-color: white;    
+.ic:hover{
+    color: white;    
 }
 
-.homme:active {
-    color: white;}
+.ic:active{
+    color: white;    
+}
 
 .circleFemme circle{
     background-color: #dbdbdb00;
     border: none;
 }
 
-.femme{
-    color: black;
-    font-size: 30px;
-    
-}
 
 .neutre{
     font-size: 30px;
@@ -175,8 +173,6 @@ color: white;
 }
 
 .circleHomme{
-    background-color: #DBDBDB;
-    ;
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -206,34 +202,33 @@ color: white;
 
 
 .answergenre.homme:hover ~ .circle {
-    background-color: #2B3A31;
+    background-color: #ffffff;
     transition: 0.7s;
 }
 .answergenre.homme:checked ~ .circle {
-    background-color: #2B3A31;
+    background-color: #ffffff;
     transition: 0.7s;
 }
 
 .answergenre.femme:hover ~ .circle {
-    background-color: #2B3A31;
+    background-color: #ffffff;
     transition: 0.7s;
 }
 .answergenre.femme:checked ~ .circle {
-    background-color: #2B3A31;
+    background-color: #ffffff;
     transition: 0.7s;
 }
 
 .answergenre.neutre:hover ~ .circle {
-    background-color: #2B3A31;
+    background-color: #ffffff;
     transition: 0.7s;
 }
 .answergenre.neutre:checked ~ .circle {
-    background-color: #2B3A31;
+    background-color: #ffffff;
     transition: 0.7s;
 }
 
 .circleFemme{
-    background-color: #DBDBDB;
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -245,16 +240,11 @@ color: white;
     
 }
 
-.circleFemme:hover{
-    background-color: #2B3A31;
-    transition: 0.7s;
-}
 .answergenre:hover{
     background-color: white;
 }
 
 .circleNeutre{
-    background-color: #DBDBDB;
     height: 50px;
     width: 50px;
     border-radius: 50%;
