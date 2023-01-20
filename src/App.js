@@ -1,12 +1,12 @@
 import React from 'react';
-import './components/navbar/Navbar.css';
-import Navbar from './components/navbar/Navbar';
-import Grandeimg from './components/grandeimg/Grandeimg.js';
-import Petitesimg from './components/petitesimg/Petitesimg.js';
-import Footer from './components/footer/Footer.js';
-import './components/grandeimg/Grandeimg.css'
-import './components/petitesimg/Petitesimg.css'
-import './components/footer/Footer.css'
+import './Components/navbar/Navbar.css';
+import Navbar from './Components/navbar/Navbar';
+import Grandeimg from './Components/grandeimg/Grandeimg.js';
+import Petitesimg from './Components/petitesimg/Petitesimg.js';
+import Footer from './Components/footer/Footer.js';
+import './Components/grandeimg/Grandeimg.css'
+import './Components/petitesimg/Petitesimg.css'
+import './Components/footer/Footer.css'
 
 function App() {
   const [Logo, setLogo] = React.useState("Universelle");
