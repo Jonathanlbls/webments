@@ -14,8 +14,7 @@ function Navbar({Logo, Couleur, Typo}) {
     return (
       <div className={"App "+Typo}>
       <div className='navbar'>
-          <div className= {"dessus "+Couleur}>
-
+          <div className={"dessus "+Couleur}>
             <div className= {"left "+Couleur}>
               <a href="https://www.example.com">
               {Logo === "Universelle" && <img src={universellelog}/>}
@@ -67,5 +66,6 @@ function Navbar({Logo, Couleur, Typo}) {
       </div>
     );
   }
-  
+
+
   export default Navbar;
