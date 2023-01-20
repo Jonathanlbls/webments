@@ -41,9 +41,9 @@ function Fonctionquiz4({setQuiz}) {
 
             </ul>
         </div>
-
-        <button id="submit" onClick={() => setQuiz("Generator")} className>Soumettre</button>
-
+        <div className="Suivant"> 
+        <button id="submit" onClick={() => setQuiz("Generator")} className>Soumettre</button>  
+</div>
     </div>
             )
 }

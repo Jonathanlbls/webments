@@ -8,26 +8,56 @@ import '../components/petitesimg/Petitesimg.css'
 import Footer from '../components/footer/Footer.js';
 import '../components/footer/Footer.css';
 
-function Generator() {
-  const [Logo, setLogo] = React.useState("Street");
-  const [Couleur, setCouleur] = React.useState("Ciel");
-  const [Typo, setTypo] = React.useState("Street");
+function Generator({Universelle}) {
+  const [Logo, setLogo] = React.useState("Gothique");
+  const [Couleur, setCouleur] = React.useState("Universelle");
+  const [Typo, setTypo] = React.useState("Universelle");
 
 
-  const [Pimg, setPimg] = React.useState("Street neutre");
-  const [PimgCouleur, setPimgCouleur] = React.useState("Street");
-  const [PimgTypo, setPimgTypo] = React.useState("Street");
+  const [Pimg, setPimg] = React.useState("Universelle");
+  const [PimgCouleur, setPimgCouleur] = React.useState("Universelle");
+  const [PimgTypo, setPimgTypo] = React.useState("Universelle");
  
 
-  const [Gimg, setGimg] = React.useState("Street neutre");
-  const [Gimgcouleur, setGimgcouleur] = React.useState("Street");
-  const [Gimgtypo, setGimgtypo] = React.useState("Street");
+  const [Gimg, setGimg] = React.useState("Universelle");
+  const [Gimgcouleur, setGimgcouleur] = React.useState("Universelle");
+  const [Gimgtypo, setGimgtypo] = React.useState("Universelle");
 
-  const [Footcouleur, setFootcouleur] = React.useState("Street");
-  const [Foottypo, setFootypo] = React.useState("Street");
+  const [Footcouleur, setFootcouleur] = React.useState("Universelle");
+  const [Foottypo, setFootypo] = React.useState("Universelle");
+
+  // React.useEffect(()=>{
+    
+  // setGimg(`${Genre} ${Style}`)
+ 
+
+    
+  //   },[Genre, Style]) 
+
+
+    React.useEffect(()=>{
+    if(Universelle){
+      setLogo("Universelle");
+      setCouleur("Universelle");
+      setTypo("Universelle");
+
+      setPimg("Universelle");
+      setPimgCouleur("Universelle");
+      setPimgTypo("Universelle");
+
+      setGimg("Universelle");
+      setGimgcouleur("Universelle");
+      setGimgtypo("Universelle");
+      
+      setFootcouleur("Universelle");
+      setFootypo("Universelle");
+    } 
+        },[Universelle]) 
+
+
 
   return (
-    <div className="App">
+    <div className="Page">
       <Navbar Logo={Logo} Couleur={Couleur} Typo={Typo}></Navbar>
       <Petitesimg Pimg={Pimg} PimgCouleur={PimgCouleur} PimgTypo={PimgTypo}></Petitesimg>
       <Grandeimg Gimg={Gimg} Gimgcouleur={Gimgcouleur} Gimgtypo={Gimgtypo} ></Grandeimg>

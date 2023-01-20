@@ -14,6 +14,7 @@ function Fonctionquiz3({setQuiz, setPalette, test}) {
       })
 
     return (
+        <div className="top">
 <form ref={FormRef} onSubmit={handleSubmit} className="quizz-container" id="quizz">
         <div className="quizz-header">
             <h2 id="question">Quel est ta palette préférée ? </h2>
@@ -39,8 +40,11 @@ function Fonctionquiz3({setQuiz, setPalette, test}) {
             </ul>
     
     </div>
-            <button id="submit">Soumettre</button>
+<div className="Suivant">        
+<button id="submit" >Soumettre</button>
+</div>
             </form>
+            </div>
             )
 }
 
