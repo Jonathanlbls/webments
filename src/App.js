@@ -10,8 +10,8 @@ function App() {
   return (
     <div className="App">
  {/* <Generator></Generator> */}
- <Design></Design>
- <SetQuiz></SetQuiz>
+  {/*  <Design></Design> */}
+<SetQuiz></SetQuiz>
 
     </div>
   );

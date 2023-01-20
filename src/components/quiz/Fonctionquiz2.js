@@ -19,7 +19,7 @@ function Fonctionquiz2({setQuiz, setStyle, test}) {
     return (
      <form ref={FormRef} onSubmit={handleSubmit} className="quizz-container" id="quizz">
         <div className="quizz-header">
-            <h2 id="question">Quel style vestimentaire retiens ton attention ? </h2>
+            <h2 id="question">Quel style vestimentaire retient ton attention ? </h2>
             <ul >
                 <li>
                     <img src ={hommeclassique} className="hommeclassique" onClick={() => handleImageClick("hommeclassique")}/>

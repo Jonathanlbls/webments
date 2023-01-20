@@ -15,6 +15,11 @@ function Fonctionquiz({setQuiz, setGenre, test}) {
       
     return (
         <form ref={FormRef} onSubmit={handleSubmit} className="quizz-container" id="quizz">
+
+<div class="d-flex flex-column justify-content-center w-100 h-100">
+<div class="d-flex flex-column justify-content-center align-items-center">
+    </div>    
+    </div>
         <div className="quizz-header">
             <h2 id="question">Quel est ton genre ?</h2>
             <ul className="quizz-ul">
@@ -47,7 +52,13 @@ function Fonctionquiz({setQuiz, setGenre, test}) {
 
         <button id="submit">Soumettre</button>
 
+      {/* <div className="link-container">
+      <Link to='/about-gender'>Learn more about gender</Link>
+   </div>  */}    
+
     </form>
+
+
             )
 }
 
