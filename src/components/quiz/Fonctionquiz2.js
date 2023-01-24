@@ -20,7 +20,7 @@ function Fonctionquiz2({setQuiz, setStyle, test}) {
             <ul className="ul-container">
                 <li>
                     <div className="classiqueh">
-                        <input type="radio" name="answer" id="a" value="homme" className="answerStyle"></input> 
+                        <input type="radio" name="answer" id="a" value="Classique homme" className="answerStyle"></input> 
                         <img src ={hommeclassique} className="hommeclassique"/>
                     </div>
 
@@ -28,14 +28,14 @@ function Fonctionquiz2({setQuiz, setStyle, test}) {
 
                 <li>
                     <div className="classiqueh">
-                         <input type="radio" name="answer" id="b" value="femme" className="answerStyle"/> 
+                         <input type="radio" name="answer" id="b" value="Street homme" className="answerStyle"/> 
                          <img src ={hommestreetwear} className="hommeclassique"/>
                     </div>
                 </li>
 
                 <li>
                      <div className="classiqueh">
-                          <input type="radio" name="answer" id="c" value="neutre" className="answerStyle"/> 
+                          <input type="radio" name="answer" id="c" value="Gothique homme" className="answerStyle"/> 
                           <img src ={hommegothique} className="hommeclassique"/>
                     </div>
                 </li>
