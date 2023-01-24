@@ -2,6 +2,7 @@ import React from "react";
 import hommeclassique from "../image/hommeclassique.png";
 import hommestreetwear from '../image/hommestreetwear.png';
 import hommegothique from '../image/hommegothique.png';
+import "./Fq2.css"
 import useForm from "./useform";
 
 function Fonctionquiz2({setQuiz, setStyle, test}) {
@@ -9,33 +10,51 @@ function Fonctionquiz2({setQuiz, setStyle, test}) {
         console.log(data.answer,test) // Write your submit function here
         setStyle(data.answer)
         setQuiz("question3")
-    })
-
-    const handleImageClick = (answer) => {
-      FormRef.current.setData({ answer });
-      handleSubmit();
-    }
-
+      })
+      
     return (
-     <form ref={FormRef} onSubmit={handleSubmit} className="quizz-container" id="quizz">
-        <div className="quizz-header">
-            <h2 id="question">Quel style vestimentaire retient ton attention ? </h2>
-            <ul >
+        <div className="top">
+        <form ref={FormRef} onSubmit={handleSubmit} className="quizz-container" id="quizz">
+        <div className="quizz-head">
+            <h2 id="question">Quel est ton style préféré ?</h2>
+            <ul className="ul-container">
                 <li>
-                    <img src ={hommeclassique} className="hommeclassique" onClick={() => handleImageClick("hommeclassique")}/>
+                    <div className="classiqueh">
+                        <input type="radio" name="answer" id="a" value="Classique homme" className="answerStyle"></input> 
+                        <img src ={hommeclassique} className="hommeclassique"/>
+                    </div>
+
                 </li>
 
                 <li>
-                    <img src ={hommestreetwear} className="hommestreetwear" onClick={() => handleImageClick("hommestreetwear")}/>
+                    <div className="classiqueh">
+                         <input type="radio" name="answer" id="b" value="Street homme" className="answerStyle"/> 
+                         <img src ={hommestreetwear} className="hommeclassique"/>
+                    </div>
                 </li>
-        
-                <li>                    
-                    <img src ={hommegothique} className="hommegothique" onClick={() => handleImageClick("hommegothique")}/>
+
+                <li>
+                     <div className="classiqueh">
+                          <input type="radio" name="answer" id="c" value="Gothique homme" className="answerStyle"/> 
+                          <img src ={hommegothique} className="hommeclassique"/>
+                    </div>
                 </li>
+
             </ul>
         </div>
-        <button id="submit">Soumettre</button>
+<div className="Suivant2">        
+<button id="submit" >Suivant</button>
+</div>
+
+
+      {/* <div className="link-container">
+      <Link to='/about-gender'>Learn more about gender</Link>
+   </div>  */}    
+
     </form>
+    </div>
+
+
             )
 }
 

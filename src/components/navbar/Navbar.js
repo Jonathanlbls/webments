@@ -34,7 +34,9 @@ function Navbar({Logo, Couleur, Typo}) {
             </div>
   
             <div className='right'>
+              <a href="/my-page">
               <MySwitch class={"icon " +Couleur}></MySwitch>
+              </a>
               <a href="/my-page" class={"icon " +Couleur}>
               <FaUserAlt/>
               </a>

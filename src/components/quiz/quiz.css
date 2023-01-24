@@ -6,12 +6,13 @@
     padding: 0;
   } */
 
-body,html{
-    width: 100vw;
-    height: 100vh;
+  body,html{
+    width: 100%;
+    height: 100%;
 }
 
-body {
+
+.top {
 	background: linear-gradient(-45deg, #E5EEDD, #507271, #E5EEDD, #8AC9C0);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
@@ -37,14 +38,14 @@ body {
     padding: 0;
 }
 
-body{
+.top{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     overflow: hidden;
-    margin: 0;
-}
+    margin: 0;}
+
 
 .quizz-container{
     border-radius: 40px;
@@ -69,7 +70,13 @@ body{
     color: #2B3A31;
 } */
 
-ul{
+.quizz-header h2{
+    padding: 1 rem;
+    text-align: center;
+    margin-top: 9%;
+    color: #2B3A31;}
+
+.quizz-header ul{
     list-style-type: none;
     padding: 0;
     text-align: center ;
@@ -80,7 +87,7 @@ ul{
     
 }
 
-.ul2{
+.quizz-header .ul2{
     list-style-type: none;
     padding: 0;
     text-align: center ;
@@ -90,7 +97,7 @@ ul{
     
 }
 
-ul li{
+.quizz-header ul li{
     font-size: 1.2rem;
     margin: 1rem 0;
     text-align: center;
@@ -99,12 +106,13 @@ ul li{
 }
 
 
-ul li label{
+.quizz-header ul li label{
     cursor: pointer;
     
 }
 
-/* button{
+
+.Suivant button{
     background-color: #2B3A31;
     color: #fff;
     border: none;
@@ -113,8 +121,8 @@ ul li label{
     cursor: pointer;
     font-size: 1.1rem;
     padding: 1.3rem;
-    transform: translate(0px, -22px);
-} */
+    transform: translate(0px, 1px);
+}
 
 .btn2{
     background-color: #083B32;
@@ -128,38 +136,35 @@ ul li label{
     margin-top: -2px;
 }
 
-/* button:hover{
+.Suivant button:hover{
     background-color:#4B6960;
 } */
 
 .answergenre{
-    opacity: 100%;
-    width: 30px;
-    height: 30px;
+    opacity: 0%;
+    transform: translate(2px, 0px) scale(4);
    
 }
 
-.homme{
-    font-size: 30px;  
+.ic{
+    color: black;
+    font-size: 30px;
+    
 }
 
-.homme:hover{
-color: white;    
+.ic:hover{
+    color: white;    
 }
 
-.homme:active {
-    color: white;}
+.ic:active{
+    color: white;    
+}
 
 .circleFemme circle{
     background-color: #dbdbdb00;
     border: none;
 }
 
-.femme{
-    color: black;
-    font-size: 30px;
-    
-}
 
 .neutre{
     font-size: 30px;
@@ -167,8 +172,6 @@ color: white;
 }
 
 .circleHomme{
-    background-color: #DBDBDB;
-    ;
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -198,34 +201,33 @@ color: white;
 
 
 .answergenre.homme:hover ~ .circle {
-    background-color: #2B3A31;
+    background-color: #ffffff;
     transition: 0.7s;
 }
 .answergenre.homme:checked ~ .circle {
-    background-color: #2B3A31;
+    background-color: #ffffff;
     transition: 0.7s;
 }
 
 .answergenre.femme:hover ~ .circle {
-    background-color: #2B3A31;
+    background-color: #ffffff;
     transition: 0.7s;
 }
 .answergenre.femme:checked ~ .circle {
-    background-color: #2B3A31;
+    background-color: #ffffff;
     transition: 0.7s;
 }
 
 .answergenre.neutre:hover ~ .circle {
-    background-color: #2B3A31;
+    background-color: #ffffff;
     transition: 0.7s;
 }
 .answergenre.neutre:checked ~ .circle {
-    background-color: #2B3A31;
+    background-color: #ffffff;
     transition: 0.7s;
 }
 
 .circleFemme{
-    background-color: #DBDBDB;
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -237,16 +239,11 @@ color: white;
     
 }
 
-.circleFemme:hover{
-    background-color: #2B3A31;
-    transition: 0.7s;
-}
 .answergenre:hover{
     background-color: white;
 }
 
 .circleNeutre{
-    background-color: #DBDBDB;
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -492,3 +489,35 @@ background-color: #8AC9C0;
         100% {background-image: url(/Users/jonathan/Desktop/code/webments/src/components/image/Policegothique.png);}
 
       } 
+
+
+
+/* bouton site universelle */
+
+    
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+.Normal{
+    position:absolute;
+    bottom: 5%;
+    width: 249px;
+    font-size: 14px;
+    background-color:rgba(128, 128, 128, 0);
+    border: 2px solid white;
+    color: white;
+    padding: 0.5%; 
+}
+
+.Normal:hover{
+background-color: rgba(0, 0, 0, 0.167);
+border: 2px solid rgba(0, 0, 0, 0.167);
+}
+
+.Centrer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
