@@ -26,28 +26,28 @@ function Generator({Universelle, Genre, Style}) {
   const [Footcouleur, setFootcouleur] = React.useState("Universelle");
   const [Foottypo, setFootypo] = React.useState("Universelle");
 
-  React.useEffect(()=>{
+  // React.useEffect(()=>{
     
-  setGimg(`${Genre === "Femme" } ${Style === "undefined"}`)
-  setLogo("Universelle");
-  setCouleur("Universelle");
-  setTypo("Universelle");
+  // setGimg(`${Genre === "Femme" } ${Style === "undefined"}`)
+  // setLogo("Universelle");
+  // setCouleur("Universelle");
+  // setTypo("Universelle");
 
-  setPimg("Street femme");
-  setPimgCouleur("Universelle");
-  setPimgTypo("Universelle");
+  // setPimg("Street femme");
+  // setPimgCouleur("Universelle");
+  // setPimgTypo("Universelle");
 
-  setGimg("Universelle");
-  setGimgcouleur("Universelle");
-  setGimgtypo("Universelle");
+  // setGimg("Universelle");
+  // setGimgcouleur("Universelle");
+  // setGimgtypo("Universelle");
   
-  setFootcouleur("Universelle");
-  setFootypo("Universelle");
+  // setFootcouleur("Universelle");
+  // setFootypo("Universelle");
 
     
-    },[Genre, Style]) 
+  //   },[Genre, Style]) 
 
-
+// states si click sur " aller sur le site Universelle"
     React.useEffect(()=>{
     if(Universelle){
       setLogo("Universelle");
