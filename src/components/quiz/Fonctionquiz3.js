@@ -24,16 +24,12 @@ function Fonctionquiz3({setQuiz, setPalette, test}) {
                 <li>
                     <img src ={gothique} className="palette1"></img> 
                 </li>
-
-
                 <li>
-                
-                        <img src ={classique} className="palette2"></img>
+                    <img src ={classique} className="palette2"></img>
                 </li>
 
                 <li>
-                
-                        <img src ={streetwear} className="palette3"></img> 
+                    <img src ={streetwear} className="palette3"></img> 
                 </li>
 
             </ul>

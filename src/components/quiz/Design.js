@@ -1,78 +1,70 @@
 import * as THREE from 'three'
-import React, { useRef, useMemo, useState, useEffect } from 'react'
-import { Canvas, extend, useThree, useFrame } from '@react-three/fiber'
-import niceColors from 'nice-color-palettes'
-import { Effects } from '@react-three/drei'
-import { SSAOPass, UnrealBloomPass } from 'three-stdlib'
+import { useState, useRef, Suspense, useMemo } from 'react'
+import { Canvas, useThree, useFrame, useLoader } from '@react-three/fiber'
+import { Reflector, CameraShake, OrbitControls, useTexture } from '@react-three/drei'
+import { KernelSize } from 'postprocessing'
+import { EffectComposer, Bloom } from '@react-three/postprocessing'
+import { SVGLoader } from 'three/examples/jsm/loaders/SVGLoader'
+import Accueil from './Accueil'
 
-extend({ SSAOPass, UnrealBloomPass })
-const tempObject = new THREE.Object3D()
-const tempColor = new THREE.Color()
-const data = Array.from({ length: 1000 }, () => ({ color: niceColors[17][Math.floor(Math.random() * 5)], scale: 1 }))
-
-export function Design() {
+function Triangle({ color, ...props }) {
+  const ref = useRef()
+  const [r] = useState(() => Math.random() * 10000)
+  useFrame((_) => (ref.current.position.y = -1.75 + Math.sin(_.clock.elapsedTime + r) / 10))
+  const { paths: [path] } = useLoader(SVGLoader, '/triangle.svg') // prettier-ignore
+  const geom = useMemo(() => SVGLoader.pointsToStroke(path.subPaths[0].getPoints(), path.userData.style), [])
   return (
-    <div className='canvas'><Canvas gl={{ antialias: false }} camera={{ position: [0, 0, 15], near: 5, far: 20 }}>
-      <color attach="background" args={['#f0f0f0']} />
-      <Boxes />
-      <Post />
+    <group ref={ref}>
+      <mesh geometry={geom} {...props}>
+        <meshBasicMaterial color={color} toneMapped={false} />
+      </mesh>
+    </group>
+  )
+}
+
+function Rig({ children }) {
+  const ref = useRef()
+  const vec = new THREE.Vector3()
+  const { camera, mouse } = useThree()
+  useFrame(() => {
+    camera.position.lerp(vec.set(mouse.x * 2, 0, 3.5), 0.05)
+    ref.current.position.lerp(vec.set(mouse.x * 1, mouse.y * 0.1, 0), 0.1)
+    ref.current.rotation.y = THREE.MathUtils.lerp(ref.current.rotation.y, (-mouse.x * Math.PI) / 20, 0.1)
+  })
+  return <group ref={ref}>{children}</group>
+}
+
+function Ground(props) {
+  const [floor, normal] = useTexture(['/SurfaceImperfections003_1K_var1.jpg', '/SurfaceImperfections003_1K_Normal.jpg'])
+  return (
+    <Reflector resolution={1024} args={[8, 8]} {...props}>
+      {(Material, props) => <Material color="#f0f0f0" metalness={0} roughnessMap={floor} normalMap={normal} normalScale={[2, 2]} {...props} />}
+    </Reflector>
+  )
+}
+
+export default function Design() {
+  return (
+    <div className='canvas'>
+      <Canvas dpr={[1, 1.5]} camera={{ position: [0, 0, 15] }}>
+      <color attach="background" args={['black']} />
+      <ambientLight />
+      <OrbitControls enableZoom={false} enablePan={false} enableRotate={false} />
+      <Suspense fallback={null}>
+        <Rig>
+          <Triangle color="#E5EEDD" scale={0.009} rotation={[0, 0, Math.PI / 3]} />
+          <Triangle color="#8AC9C0" scale={0.009} position={[2, 0, -2]} rotation={[0, 0, Math.PI / 3]} />
+          <Triangle color="#8AC9C0" scale={0.009} position={[-2, 0, -2]} rotation={[0, 0, Math.PI / 3]} />
+          <Triangle color="#507271" scale={0.009} position={[0, 2, -10]} rotation={[0, 0, Math.PI / 3]} />
+          <Ground mirror={1} blur={[500, 100]} mixBlur={12} mixStrength={1.5} rotation={[-Math.PI / 2, 0, Math.PI / 2]} position-y={-0.8} />
+        </Rig>
+        <EffectComposer multisampling={8}>
+          <Bloom kernelSize={3} luminanceThreshold={0} luminanceSmoothing={0.4} intensity={0.6} />
+          <Bloom kernelSize={KernelSize.HUGE} luminanceThreshold={0} luminanceSmoothing={0} intensity={0.5} />
+        </EffectComposer>
+      </Suspense>
+      <CameraShake yawFrequency={0.2} pitchFrequency={0.2} rollFrequency={0.2} />
     </Canvas>
     </div>
   )
 }
-
-function Boxes() {
-  const [hovered, set] = useState()
-  const colorArray = useMemo(() => Float32Array.from(new Array(1000).fill().flatMap((_, i) => tempColor.set(data[i].color).toArray())), [])
-  const meshRef = useRef()
-  const prevRef = useRef()
-  useEffect(() => void (prevRef.current = hovered), [hovered])
-
-  useFrame((state) => {
-    const time = state.clock.getElapsedTime()
-    meshRef.current.rotation.x = Math.sin(time / 4)
-    meshRef.current.rotation.y = Math.sin(time / 2)
-    let i = 0
-    for (let x = 0; x < 10; x++)
-      for (let y = 0; y < 10; y++)
-        for (let z = 0; z < 10; z++) {
-          const id = i++
-          tempObject.position.set(5 - x, 5 - y, 5 - z)
-          tempObject.rotation.y = Math.sin(x / 4 + time) + Math.sin(y / 4 + time) + Math.sin(z / 4 + time)
-          tempObject.rotation.z = tempObject.rotation.y * 2
-          if (hovered !== prevRef.Current) {
-            ;(id === hovered ? tempColor.setRGB(10, 10, 10) : tempColor.set(data[id].color)).toArray(colorArray, id * 3)
-            meshRef.current.geometry.attributes.color.needsUpdate = true
-          }
-          const scale = (data[id].scale = THREE.MathUtils.lerp(data[id].scale, id === hovered ? 2.5 : 1, 0.1))
-          tempObject.scale.setScalar(scale)
-          tempObject.updateMatrix()
-          meshRef.current.setMatrixAt(id, tempObject.matrix)
-        }
-    meshRef.current.instanceMatrix.needsUpdate = true
-  })
-  return (
-    <instancedMesh
-      ref={meshRef}
-      args={[null, null, 1000]}
-      onPointerMove={(e) => (e.stopPropagation(), set(e.instanceId))}
-      onPointerOut={(e) => set(undefined)}>
-      <boxGeometry args={[0.6, 0.6, 0.6]}>
-        <instancedBufferAttribute attach="attributes-color" args={[colorArray, 3]} />
-      </boxGeometry>
-      <meshBasicMaterial toneMapped={false} vertexColors />
-    </instancedMesh>
-  )
-}
-
-function Post() {
-  const { scene, camera } = useThree()
-  return (
-    <Effects disableGamma>
-      <sSAOPass args={[scene, camera]} kernelRadius={0.5} maxDistance={0.1} />
-      <unrealBloomPass threshold={0.9} strength={0.75} radius={0.5} />
-    </Effects>
-  )
-}
-
-export default Design;
