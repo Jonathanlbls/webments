@@ -3,7 +3,7 @@ import "./quiz.css";
 import "./Sq.css";
 import Fonctionquiz from "./Fonctionquiz";
 import Fonctionquiz2 from "./Fonctionquiz2";
-import Fonctionquiz3 from "./Fonctionquiz3";
+import Fonctionquiz3 from "./Fonctionquiz5";
 import Generator from "../Generator.js";
 
 
@@ -34,7 +34,7 @@ function SetQuiz() {
         setUniverselle(true)
         setQuiz("Generator")
 
-      } }  className="Normal">Aller sur le site classique</button>}
+      } }  className="Normal">Aller sur le site universelle</button>}
     </div>
   </div>
   );

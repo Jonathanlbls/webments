@@ -121,7 +121,7 @@
     cursor: pointer;
     font-size: 1.1rem;
     padding: 1.3rem;
-    transform: translate(0px, -22px);
+    transform: translate(0px, 1px);
 }
 
 .btn2{
@@ -142,8 +142,7 @@
 
 .answergenre{
     opacity: 0%;
-    width: 30px;
-    height: 30px;
+    transform: translate(2px, 0px) scale(4);
    
 }
 
@@ -262,7 +261,7 @@
 }
 
 
-.palette1{
+/* .palette1{
     
     width: 267px;
     height: 67px;
@@ -282,86 +281,8 @@
     margin-top: -18px;
     width: 267px;
     height: 67px;
-}
+} */
 
-.answergothique{
-    margin-right: 150px;
-}
-
-.answerclassique{
-    margin-left: 175px;
-    margin-top: -188px;
-}
-
-.hommeclassique {
-    margin-left: -230px;
-    margin-bottom: -165px;
-    margin-top: -250px;
-    width: 60%;
-}
-
-.hommestreetwear {
-    margin-left: -10px;
-    margin-bottom: -119px;
-    margin-top: -274px;
-    width: 65%;
-}
-
-.hommegothique {
-    margin-right: -194px;
-    margin-bottom: -55px;
-    margin-top: -274px;
-    width: 65%;
-}
-    
-.hommeclassique{
-    
-    filter: grayscale(1);
-    
-}
-
-.hommestreetwear{
-    
-     filter: grayscale(1);
-        
-}
-
-.hommegothique{
-    
-    filter: grayscale(1);
-    
-}
-
-.hommeclassique:hover{
-    filter: grayscale(0);
-    cursor: pointer;
-
-}
-
-
-.hommegothique:hover{
-    filter: grayscale(0);
-    cursor: pointer;
-
-}
-
-.hommestreetwear:hover{
-    filter: grayscale(0);
-    cursor: pointer;
-  
-}
-
-.hommeclassique:active {
-    filter: grayscale(0)
-    ;}
-
-.hommestreetwear:active {
-        filter: grayscale(0)
-        ;}
-
-.hommegothique:active {
-            filter: grayscale(0)
-            ;}
 
 /* .checkbox-wrapper {
     position: absolute;

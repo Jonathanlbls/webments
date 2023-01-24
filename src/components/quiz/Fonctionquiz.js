@@ -50,7 +50,7 @@ function Fonctionquiz({setQuiz, setGenre, test}) {
             </ul>
         </div>
 <div className="Suivant">        
-<button id="submit" >Soumettre</button>
+<button id="submit" >Suivant</button>
 </div>
 
 

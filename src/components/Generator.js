@@ -8,7 +8,7 @@ import '../components/petitesimg/Petitesimg.css'
 import Footer from '../components/footer/Footer.js';
 import '../components/footer/Footer.css';
 
-function Generator({Universelle}) {
+function Generator({Universelle, Genre, Style}) {
   const [Logo, setLogo] = React.useState("Gothique");
   const [Couleur, setCouleur] = React.useState("Universelle");
   const [Typo, setTypo] = React.useState("Universelle");
@@ -26,13 +26,26 @@ function Generator({Universelle}) {
   const [Footcouleur, setFootcouleur] = React.useState("Universelle");
   const [Foottypo, setFootypo] = React.useState("Universelle");
 
-  // React.useEffect(()=>{
+  React.useEffect(()=>{
     
-  // setGimg(`${Genre} ${Style}`)
- 
+  setGimg(`${Genre === "Femme" } ${Style === "undefined"}`)
+  setLogo("Universelle");
+  setCouleur("Universelle");
+  setTypo("Universelle");
+
+  setPimg("Street femme");
+  setPimgCouleur("Universelle");
+  setPimgTypo("Universelle");
+
+  setGimg("Universelle");
+  setGimgcouleur("Universelle");
+  setGimgtypo("Universelle");
+  
+  setFootcouleur("Universelle");
+  setFootypo("Universelle");
 
     
-  //   },[Genre, Style]) 
+    },[Genre, Style]) 
 
 
     React.useEffect(()=>{
