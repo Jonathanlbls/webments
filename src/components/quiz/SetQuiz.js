@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./quiz.css";
-import "./Sq.css";
 import Fonctionquiz from "./Fonctionquiz";
 import Fonctionquiz2 from "./Fonctionquiz2";
 import Fonctionquiz3 from "./Fonctionquiz5";
