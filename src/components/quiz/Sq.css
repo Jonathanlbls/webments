@@ -1,0 +1,27 @@
+
+ body,html{
+    width: 100%;
+    height: 100%;
+}
+
+.Normal{
+    position:absolute;
+    bottom: 5%;
+    width: 249px;
+    font-size: 14px;
+    background-color:rgba(128, 128, 128, 0);
+    border: 2px solid white;
+    color: white;
+    padding: 0.5%; 
+}
+
+.Normal:hover{
+background-color: rgba(0, 0, 0, 0.167);
+border: 2px solid rgba(0, 0, 0, 0.167);
+}
+
+.Centrer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
