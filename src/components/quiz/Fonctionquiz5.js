@@ -21,7 +21,7 @@ function Fonctionquiz4({setQuiz, setPalette, test}) {
         <div className="top">
         <form ref={FormRef} onSubmit={handleSubmit} className="quizz-container" id="quizz">
         <div className="quizz-heade">
-            <h2 id="question">Quel est ta palette préférée ?</h2>
+            <h2 id="question">Quelle est ta palette préférée ?</h2>
             <ul className="grid-container">
                 <li>
                     <div className="quizz-relatif">
