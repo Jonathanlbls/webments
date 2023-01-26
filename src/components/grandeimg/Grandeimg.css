@@ -50,7 +50,8 @@ html,body{
   }
 
   .photo img { 
-    height: 800px;
+    height: 50%;
+    /* width: 25%; */
   }
 
   .reduction {

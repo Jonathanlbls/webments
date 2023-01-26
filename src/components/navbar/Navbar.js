@@ -16,7 +16,7 @@ function Navbar({Logo, Couleur, Typo}) {
       <div className='navbar'>
           <div className={"dessus "+Couleur}>
             <div className= {"left "+Couleur}>
-              <a href="https://www.example.com">
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
               {Logo === "Universelle" && <img src={universellelog}/>}
               {Logo === "Classique" && <img src={classiquelog}/>}
               {Logo === "Gothique" && <img src={logogot}/>}
