@@ -1,8 +1,10 @@
 import React from "react";
 import Design from "./Design";
-import "./quiz.css";
+import "./Accueil.css";
 
-function Accueil() {
+
+function Accueil( {setPage}) {
+    
 
     return (
      <div className="Pres">   
@@ -11,8 +13,10 @@ function Accueil() {
             </div>
             <div  className="subtitle"><h2>Vivez une expérience unique ultra personnalisée</h2></div>     
             
-            <button id="accepter" className="Btnaccepter"><b><h3>Participer à l'expérience</h3></b></button>
-            <button id="refuser" className="Btnrefuser"><b><h3>Une prochaine fois</h3></b></button> 
+            <button id="accepter" className="Btnaccepter" onClick={() =>{
+        setPage("SetQuiz")}}><b><h3>Participer à l'expérience</h3></b></button>
+            <button id="refuser" className="Btnrefuser" onClick={() =>{
+              setPage("Generator")}}><b><h3>Une prochaine fois</h3></b></button> 
          <Design></Design>
       </div>
         
