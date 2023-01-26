@@ -7,6 +7,7 @@ function Footer({Footcouleur,Foottypo}) {
     console.log(data) // Write your submit function here
       })
     return (
+      <div className={"Fond "+Footcouleur}>
       <div className={"Typo "+Foottypo}>
       <div className={"B4 "+Footcouleur}>
         <div className={'haut '+Footcouleur}>
@@ -45,6 +46,7 @@ function Footer({Footcouleur,Foottypo}) {
 
           <div className={'bas '+Footcouleur}>
           <a href='https://flexboxfroggy.com/#fr'>Copyright © 2021 AJCA. All Rights Reserved.</a>
+          </div>
           </div>
           </div>
       </div>

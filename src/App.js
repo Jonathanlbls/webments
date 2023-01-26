@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from "react";
 import './Components/navbar/Navbar.css';
 import Navbar from './Components/navbar/Navbar';
 import Grandeimg from './Components/grandeimg/Grandeimg.js';
@@ -7,31 +7,28 @@ import Footer from './Components/footer/Footer.js';
 import './Components/grandeimg/Grandeimg.css'
 import './Components/petitesimg/Petitesimg.css'
 import './Components/footer/Footer.css'
+import "./components/quiz/quiz.css"
+import Accueil from './components/quiz/Accueil.js';
+import SetQuiz from './components/quiz/SetQuiz.js';
+import Generator from './components/Generator.js';
+
+
+
+
 
 function App() {
-  const [Logo, setLogo] = React.useState("Universelle");
-  const [Couleur, setCouleur] = React.useState("Universelle");
-  const [Typo, setTypo] = React.useState("Universelle");
+  const [Page, setPage] = React.useState("Accueil");
 
-  const [Image, setImage] = React.useState("Universelle");
- 
-
-  const [Gimg, setGimg] = React.useState("Universelle");
-  const [Gimgcouleur, setGimgcouleur] = React.useState("Universelle");
-  const [Gimgtypo, setGimgtypo] = React.useState("Universelle");
-
-  const [Footcouleur, setFootcouleur] = React.useState("Universelle");
-  const [Foottypo, setFootypo] = React.useState("Universelle");
 
   return (
     <div className="App">
-      <Navbar Logo={Logo} Couleur={Couleur} Typo={Typo}></Navbar>
-      <Petitesimg Image={Image} Couleur={Couleur} Typo={Typo}></Petitesimg>
-      <Grandeimg Gimg={Gimg} Gimgcouleur={Gimgcouleur} Gimgtypo={Gimgtypo} ></Grandeimg>
-      <Footer Footcouleur={Footcouleur} Foottypo={Foottypo}></Footer>
-    
-    </div>
-  )
-  };
+      {Page === "Accueil" && <Accueil setPage={setPage} ></Accueil>}
+      {Page === "SetQuiz" && <SetQuiz setPage={setPage} ></SetQuiz>}
+      {Page === "Generator" && <Generator setPage={setPage}></Generator>}
+    </div>    
+  );
+}
+
+
 
 export default App;

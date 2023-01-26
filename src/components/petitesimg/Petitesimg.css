@@ -3,23 +3,30 @@ html,body{
     height: 100%;
 }
 
-/* -----------------------------Universelle--------------------------------------- */
-
-.fond.Universelle {
-    background-color: white;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.police.Universelle {
-    font-family: 'arial';
+/* Général*/
+
+.fond{
+    padding: 2% 3% 2% 3%;
 }
 
-.titre.Universelle {
+.Bloc1{
+    display:flex;
+    justify-content: center;
+}
+
+.titre {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-weight: 700;
     font-size: 20px;
-    margin: 10px 3.3% 0 3.5%;
-    color: black;
+    padding-bottom: 1%;
+
 }
 
 .paramètres {
@@ -34,12 +41,9 @@ html,body{
     height: 40px;
     width: 40px;
     font-size: 20px;
-    margin-top: 15px;
 }
 
-.paramètres:hover.Universelle {
-    color: #d9d9d9;
-}
+
 
 .Bloc1{
     display:flex;
@@ -53,24 +57,25 @@ html,body{
 
 .like {
     display: flex;
-    transform: translate(850%, 150%);
+    transform: translate(1400%, 150%);
     color: white;
     background: none;
     border: none;
     font-size: 20px;
 }
 
-.like:hover.Universelle {
-    color: #d9d9d9;
-}
 
 .nom.Universelle {
     width: 100%;
     height: 6.7vmin;
     margin-bottom: 20%;
+
+.nom {
+    width: 313px;
+    height: 70px;
+    margin-bottom: 20px;
+
     transform: translate(0, -6%);
-    background-color:#d9d9d9 ;
-    color: black;
 }
 
 .nom h5 {
@@ -79,7 +84,7 @@ html,body{
     font-size: 1.7vmin;
     margin-bottom: 0;
     margin-top: 0;
-    padding: 10px 0 0 10px;
+    padding: 15px 0 0 10px;
 }
 
 .nom p {
@@ -94,7 +99,42 @@ html,body{
     display: flex;
     justify-content: space-between;
     padding-right: 10px;
+    margin-top: 5px;
 }
+
+
+/* -----------------------------Universelle--------------------------------------- */
+
+.fond.Universelle {
+    background-color: white;
+}
+
+.police.Universelle {
+    font-family: 'arial';
+}
+
+.titre.Universelle {
+    color: black;
+}
+
+.paramètres:hover.Universelle {
+    color: #d9d9d9;
+}
+
+
+.like.Universelle {
+    color: white;
+}
+
+.like:hover.Universelle {
+    color: #d9d9d9;
+}
+
+.nom.Universelle {
+    background-color:#d9d9d9 ;
+    color: black;
+}
+
 
 /* -----------------------------Typo--------------------------------------- */
 
@@ -106,7 +146,7 @@ html,body{
     font-family: 'Raleway';
 }
 
-.police.Streetwear {
+.police.Street {
     font-family: 'Franklin Gothic Heavy';
 }
 
@@ -114,96 +154,69 @@ html,body{
 
 /* ----------------Rouge------------------- */
 
-.fond.Rouge {
+.fond.Gothique {
     background-color: black;
 }
 
-.titre.Rouge {
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 20px;
-    margin: 10px 3.3% 0 3.5%;
+.titre.Gothique {
     color: white;
 }
 
-.paramètres:hover.Rouge {
+.paramètres:hover.Gothique {
     color: #BB0000;
 }
 
-.like:hover.Rouge {
+.like:hover.Gothique {
     color: #BB0000;
 }
 
-.nom.Rouge {
-    width: 313px;
-    height: 70px;
-    margin-bottom: 20px;
-    transform: translate(0, -6%);
+.nom.Gothique {
     background-color: #BB0000 ;
     color: white;
 }
 
 /* ----------------Beige------------------- */
 
-.fond.Beige {
+.fond.Classique {
     background-color: white;
 }
 
-.titre.Beige {
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 20px;
-    margin: 10px 3.3% 0 3.5%;
+.titre.Classique {
     color: black;
 }
 
-.paramètres:hover.Beige {
+.paramètres:hover.Classique {
     color: #F5E9DD;
 }
 
-.like:hover.Beige {
+.like:hover.Classique {
     color: #F5E9DD;
 }
 
-.nom.Beige {
-    width: 313px;
-    height: 70px;
-    margin-bottom: 20px;
-    transform: translate(0, -6%);
+.nom.Classique {
     background-color: #F5E9DD ;
     color: black;
 }
 
 /* ----------------Bleu------------------- */
 
-.fond.Bleu {
+.fond.Street {
     background-color: white;
 }
 
-.titre.Bleu {
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 20px;
-    margin: 10px 3.3% 0 3.5%;
+.titre.Street {
     color: black;
 }
 
-.paramètres:hover.Bleu {
+.paramètres:hover.Street {
     color: #193D4B;
 }
 
-.like:hover.Bleu {
+.like:hover.Street {
     color: #193D4B;
 }
 
-.nom.Bleu {
-    width: 313px;
-    height: 70px;
-    margin-bottom: 20px;
-    transform: translate(0, -6%);
+.nom.Street {
     background-color: #193D4B ;
     color: white;
 }
@@ -215,11 +228,6 @@ html,body{
 }
 
 .titre.Vert {
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 20px;
-    margin: 10px 3.3% 0 3.5%;
     color: white;
 }
 
@@ -232,10 +240,6 @@ html,body{
 }
 
 .nom.Vert {
-    width: 313px;
-    height: 70px;
-    margin-bottom: 20px;
-    transform: translate(0, -6%);
     background-color: #1B4B41 ;
     color: white;
 }
@@ -247,11 +251,6 @@ html,body{
 }
 
 .titre.Ciel {
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 20px;
-    margin: 10px 3.3% 0 3.5%;
     color: black;
 }
 
@@ -264,10 +263,6 @@ html,body{
 }
 
 .nom.Ciel {
-    width: 313px;
-    height: 70px;
-    margin-bottom: 20px;
-    transform: translate(0, -6%);
     background-color: #93B7C2 ;
     color: white;
 }
@@ -279,11 +274,6 @@ html,body{
 }
 
 .titre.Rose {
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 20px;
-    margin: 10px 3.3% 0 3.5%;
     color: white;
 }
 
@@ -296,10 +286,6 @@ html,body{
 }
 
 .nom.Rose {
-    width: 313px;
-    height: 70px;
-    margin-bottom: 20px;
-    transform: translate(0, -6%);
     background-color: #DCC9DF ;
     color: black;
 }

@@ -12,9 +12,11 @@ import { MySwitch } from "./MySwitch";
 function Navbar({Logo, Couleur, Typo}) {
   
     return (
+
       <div className={"App "+Typo}>
       <div className='navbar'>
           <div className={"dessus "+Couleur}>
+
             <div className= {"left "+Couleur}>
               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
               {Logo === "Universelle" && <img src={universellelog}/>}
@@ -33,7 +35,9 @@ function Navbar({Logo, Couleur, Typo}) {
             </div>
   
             <div className='right'>
+              <a href="/my-page">
               <MySwitch class={"icon " +Couleur}></MySwitch>
+              </a>
               <a href="/my-page" class={"icon " +Couleur}>
               <FaUserAlt/>
               </a>

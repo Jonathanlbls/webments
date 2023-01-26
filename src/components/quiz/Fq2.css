@@ -1,0 +1,62 @@
+.quizz-head h2{
+    padding: 1 rem;
+    text-align: center;
+    margin-top: 9%;
+    color: #2B3A31;}
+
+
+.ul-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    transform: translate(50px, 0px);
+    margin: 30% 2% 2% 2%;
+        list-style-type: none;
+  }
+
+
+.hommeclassique {
+    transform: translate(-43px, -120px);
+    width: 90%;
+    height: 246px;
+}
+
+.hommeclassique{
+    pointer-events: none;
+
+}
+
+.answerStyle:checked ~ img{
+    filter: brightness(50%);
+    }
+
+.answerStyle:hover ~ img{
+    filter: brightness(50%);
+        }
+    
+
+
+
+
+.Suivant2 button{
+        background-color: #2B3A31;
+        color: #fff;
+        border: none;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+        font-size: 1.1rem;
+        padding: 1.3rem;
+        transform: translate(0px, -115px);
+    }
+
+    .Suivant2 button:hover{
+        background-color:#4B6960;
+    }
+
+
+    .answerStyle{
+        opacity: 0%;
+        transform: translate(20px, 0px) scale(7);
+        cursor: pointer;
+    }
+

@@ -11,9 +11,12 @@ html,body{
   /* Général*/
 
 .B4{
+
     margin-left: 10%;
     margin-right: 10%;
     padding: 0.5%;
+    line-height: 1.5em
+
 }
 
 .haut{
@@ -85,10 +88,12 @@ html,body{
 
 
   /*Gothique*/
+.Fond.Gothique{
+    background-color: black ;
+}
 
 .Typo.Gothique{
     font-family: 'Newsreader','Times New Roman', Times, serif;
-    background-color: black ;
   }
 
 .B4.Gothique{
@@ -292,4 +297,169 @@ color: #051419;
 
 .bas.Classique a:hover{
 color: #7B4747;
+}
+
+
+
+ /*Vert*/
+ .Fond.Vert{
+    background-color: black ;
+}
+
+.Typo.Vert{
+    font-family: 'Newsreader','Times New Roman', Times, serif;
+  }
+
+.B4.Vert{
+    background-color: #1B4B41 ;
+}
+
+.haut.Vert{
+    color: white;
+}
+
+.haut.Vert a{
+    color: white;
+}
+
+.haut a:hover{
+    color: black;
+}
+
+.haut.Vert button{
+    background-color: white;
+    color: black;
+    }
+
+.haut.Vert button:hover {
+        background-color: black;
+        color: #1B4B41;
+    }
+
+.email.Vert{
+    background-color: #1B4B41;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+
+.bas.Vert {
+    border-top: 0.5px solid rgb(190, 190, 190);
+}
+
+.bas.Vert a{
+    color: white;
+}
+
+.bas.Vert a:hover{
+color: black;
+}
+
+
+
+ /*Rose*/
+ .Fond.Rose{
+    background-color: black ;
+}
+
+.Typo.Rose{
+    font-family: 'Newsreader','Times New Roman', Times, serif;
+  }
+
+.B4.Rose{
+    background-color: #DCC9DF ;
+}
+
+.haut.Rose{
+    color: black;
+}
+
+.haut.Rose a{
+    color: black;
+}
+
+.haut a:hover{
+    color: white;
+}
+
+.haut.Rose button{
+    background-color: white;
+    color: black;
+    }
+
+.haut.Rose button:hover {
+        background-color: black;
+        color: #DCC9DF;
+    }
+
+.email.Rose{
+    background-color: #DCC9DF;
+    border-bottom: 2px solid black;
+    color: white;
+}
+
+
+.bas.Rose {
+    border-top: 0.5px solid rgb(190, 190, 190);
+}
+
+.bas.Rose a{
+    color: black;
+}
+
+.bas.Rose a:hover{
+color: white;
+}
+
+
+
+/*Ciel*/
+
+.Typo.Ciel{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+.B4.Ciel{
+    background-color: #93B7C2;
+}
+
+.haut.Ciel{
+    color: white;
+}
+
+.haut.Ciel a{
+    color: white;
+}
+
+.haut.Ciel a:hover{
+    color: #051419;
+}
+
+.haut.Ciel button{
+    background-color: white;
+    color: #051419;
+    }
+
+    .haut.Ciel button:hover {
+        background-color: #051419;
+        color: #D9D9D9;
+    }
+
+.email.Ciel {
+    background-color: #93B7C2;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+
+.bas.Ciel {
+    border-top: 0.5px solid black;
+}
+
+.bas.Ciel a{
+    color: white;
+}
+
+.bas.Ciel a:hover{
+color: #051419;
 }
