@@ -1,5 +1,5 @@
 import React from "react";
-import "./Fq3.css"
+import "./Fq5.css"
 import PStreet from "../image/PStreet.png";
 import PClassique from "../image/PClassique.png";
 import Pgothique from "../image/Pgothique.png";
