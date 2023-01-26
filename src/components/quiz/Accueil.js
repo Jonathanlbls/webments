@@ -1,9 +1,6 @@
 import React from "react";
 import Design from "./Design";
 import "./quiz.css";
-import Policeuniverselle from "/Users/jonathan/Desktop/code/webments/src/components/image/Policeuniverselle.png";
-import Policegothique from "/Users/jonathan/Desktop/code/webments/src/components/image/Policegothique.png";
-
 
 function Accueil() {
 

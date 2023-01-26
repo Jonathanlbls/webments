@@ -9,9 +9,11 @@ function App() {
 
   return (
     <div className="App">
-<Accueil></Accueil>
-    </div>
+      <Accueil></Accueil>
+    </div>    
   );
 }
+
+
 
 export default App;

@@ -4,8 +4,6 @@ import {BsGenderFemale} from "react-icons/bs";
 import {IoMaleFemaleOutline} from "react-icons/io5"; 
 import useForm from "./useform";
 
-
-
 function Fonctionquiz({setQuiz, setGenre, test}) {
     const [FormRef,handleSubmit,resetForm] = useForm((data)=>{
         console.log(data.answer,test) // Write your submit function here

@@ -13,10 +13,7 @@ function SetQuiz() {
   const [Genre, setGenre] = React.useState("question2");
   const [Style, setStyle] = React.useState("question3");
   const [palette, setPalette] = React.useState("Generator");
-  const [Universelle, setUniverselle] = React.useState(false);
-
-
- 
+  const [Universelle, setUniverselle] = React.useState(false); 
   
 
   return (
@@ -27,6 +24,7 @@ function SetQuiz() {
       {Quiz === "question2" && <Fonctionquiz2 setQuiz={setQuiz} setStyle={setStyle}></Fonctionquiz2>}
       {Quiz === "question3" && <Fonctionquiz3 setQuiz={setQuiz} setPalette={setPalette}></Fonctionquiz3>}
       {Quiz === "Generator" && <Generator setQuiz={setQuiz} Genre={Genre} Style={Style}></Generator>}
+
 
       <div className="Centrer">
       {Quiz != "Generator" && <button  onClick={() =>{

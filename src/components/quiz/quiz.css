@@ -439,13 +439,13 @@
     display: block;
     cursor: pointer;
     display: inline-block;
-    margin: 50px;
-    margin-left: -740px;
-    margin-bottom: 284px;
-    width: 200px;
-    height: 52px;
+    width: 245px;
+    height: 65px;
     text-align: center;
     border-radius: 10px;
+    position: absolute;
+    left: 6%;
+    top: 35%;
 }
 
 .Btnaccepter:hover{
@@ -459,10 +459,12 @@ background-color: #8AC9C0;
     display: inline-block;
     left: 100px;
     width: 200px;
-    height: 52px;
+    height: 65px;
     text-align: center;
     border-radius: 10px;
-
+    position: absolute;
+    left: 23%;
+    top: 35%;
  
 }
 
@@ -483,10 +485,10 @@ background-color: #8AC9C0;
 
  @keyframes animationtitre {
    
-        0%   {background-image: url(/Users/jonathan/Desktop/code/webments/src/components/image/Policeuniverselle.png);}
-        33%  {background-image: url(/Users/jonathan/Desktop/code/webments/src/components/image/Policeclassique.png);}
-        66%  {background-image: url(/Users/jonathan/Desktop/code/webments/src/components/image/Policestreetwear.png);}
-        100% {background-image: url(/Users/jonathan/Desktop/code/webments/src/components/image/Policegothique.png);}
+        0%   {background-image: url(../image/Policeuniverselle.png);}
+        33%  {background-image: url(../image/Policeclassique.png);}
+        66%  {background-image: url(../image/Policestreetwear.png);}
+        100% {background-image: url(../image/Policegothique.png);}
 
       } 
 
