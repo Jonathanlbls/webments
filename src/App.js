@@ -1,9 +1,17 @@
-import React from 'react';
 import { Component } from "react";
+import './Components/navbar/Navbar.css';
+import Navbar from './Components/navbar/Navbar';
+import Grandeimg from './Components/grandeimg/Grandeimg.js';
+import Petitesimg from './Components/petitesimg/Petitesimg.js';
+import Footer from './Components/footer/Footer.js';
+import './Components/grandeimg/Grandeimg.css'
+import './Components/petitesimg/Petitesimg.css'
+import './Components/footer/Footer.css'
 import "./components/quiz/quiz.css"
 import Accueil from './components/quiz/Accueil.js';
 import SetQuiz from './components/quiz/SetQuiz.js';
 import Generator from './components/Generator.js';
+
 
 
 

@@ -15,6 +15,7 @@ html,body{
     flex-direction: column;
   }
 
+  
   .navbar{
     margin-left: 3%;
     margin-right: 3%;
@@ -22,15 +23,17 @@ html,body{
 
 .dessus{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     padding-top: 1%;
 }
 
-.left{display: flex;
+.left{
+    display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-bottom:1%;
     width: 30%;
   }
@@ -38,11 +41,12 @@ html,body{
 
 .left img{
   margin-bottom: -26%; 
+  width: 5vmin;
 }
 
 .right{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 20%;
 }
 
@@ -50,6 +54,8 @@ html,body{
     border-left: 2px solid black;
     height: 40px;
     margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 
 
@@ -57,7 +63,7 @@ html,body{
     display:flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 50px;
     padding-left: 2%;
     padding-right: 2%;
@@ -72,10 +78,12 @@ html,body{
     font-family: Montserrat, Arial, Helvetica, sans-serif;
   }
 
+
   .left.Universelle a{
     color: black;
     text-decoration: none;
     font-weight: bold;
+    font-size: 2vmin;
   }
 
 
@@ -94,7 +102,8 @@ html,body{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: space-evenly;
-    font-size: 85%;
+    /* font-size: 85%; */
+    font-size: 1.5vmin;
     color: black;
   }
 

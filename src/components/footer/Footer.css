@@ -11,17 +11,19 @@ html,body{
   /* Général*/
 
 .B4{
-    margin-left: 40px;
-    margin-right: 40px;
-    padding: 45px;
+
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0.5%;
     line-height: 1.5em
+
 }
 
 .haut{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 45px;
+    margin-bottom: 5%;
 }
 
 .haut H4 {
