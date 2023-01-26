@@ -12,8 +12,11 @@ function SetQuiz() {
   const [Quiz, setQuiz] = React.useState("quiz");
   const [Genre, setGenre] = React.useState("question2");
   const [Style, setStyle] = React.useState("question3");
-  const [palette, setPalette] = React.useState("Generator");
-  const [Universelle, setUniverselle] = React.useState(false); 
+  const [Palette, setPalette] = React.useState("Generator");
+  const [Universelle, setUniverselle] = React.useState(false);
+
+
+ 
   
 
   return (
@@ -21,9 +24,9 @@ function SetQuiz() {
     <div>
       {/* <div> */}
       {Quiz === "quiz" && <Fonctionquiz setQuiz={setQuiz} setGenre={setGenre}></Fonctionquiz>}
-      {Quiz === "question2" && <Fonctionquiz2 setQuiz={setQuiz} setStyle={setStyle}></Fonctionquiz2>}
+      {Quiz === "question2" && <Fonctionquiz2 setQuiz={setQuiz} setStyle={setStyle} Genre={Genre} ></Fonctionquiz2>}
       {Quiz === "question3" && <Fonctionquiz3 setQuiz={setQuiz} setPalette={setPalette}></Fonctionquiz3>}
-      {Quiz === "Generator" && <Generator setQuiz={setQuiz} Genre={Genre} Style={Style}></Generator>}
+      {Quiz === "Generator" && <Generator setQuiz={setQuiz} Style={Style} Palette={Palette}></Generator>}
 
 
       <div className="Centrer">
@@ -31,7 +34,7 @@ function SetQuiz() {
         setUniverselle(true)
         setQuiz("Generator")
 
-      } }  className="Normal">Aller sur le site universelle</button>}
+      } }  className="Normal">Aller sur le site universel</button>}
     </div>
   </div>
   );
