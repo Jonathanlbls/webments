@@ -39,7 +39,7 @@ function Fonctionquiz({setQuiz, setGenre, test}) {
 
                 <li>
                      <div className="quizz-relatif">
-                          <input type="radio" name="answer" id="c" value="neutre" className="answergenre neutre"/> 
+                          <input type="radio" name="answer" id="c" value="neutre" checked className="answergenre neutre"/> 
                           <div className="circleNeutre circle"><IoMaleFemaleOutline className="ic"></IoMaleFemaleOutline></div>
                     </div>
                     <label htmlFor="c" id="c_text">Neutre</label>
@@ -48,7 +48,7 @@ function Fonctionquiz({setQuiz, setGenre, test}) {
             </ul>
         </div>
 <div className="Suivant">        
-<button id="submit" >Suivant</button>
+<button id="submit">Suivant</button>
 </div>
 
 

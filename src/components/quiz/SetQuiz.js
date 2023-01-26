@@ -10,8 +10,8 @@ import Generator from "../Generator.js";
 function SetQuiz() {
   
   const [Quiz, setQuiz] = React.useState("quiz");
-  const [Genre, setGenre] = React.useState("question2");
-  const [Style, setStyle] = React.useState("question3");
+  const [Genre, setGenre] = React.useState("neutre");
+  const [Style, setStyle] = React.useState("neutre");
   const [Palette, setPalette] = React.useState("Generator");
   const [Universelle, setUniverselle] = React.useState(false);
 
